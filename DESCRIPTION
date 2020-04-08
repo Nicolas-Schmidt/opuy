@@ -1,8 +1,8 @@
 Package: opuy
 Type: Package
 Title: Datos de Opinion Publica de Uruguay 1989 - 2020
-Version: 0.1.0.905
-Author: Nicolas Schmidt [aut, cre], Daniela Vairo [aut], Diego Lujan [aut]
+Version: 0.1.0.991
+Author: Nicolas Schmidt [aut, cre], Antonio Cardarello [aut], Unidad de Metodos y Acceso a Datos (UMAD) [dtc]
 Authors@R: c(person(given = "Nicolas", 
                     family = "Schmidt", 
                     role = c("aut", "cre"), 
@@ -11,8 +11,8 @@ Authors@R: c(person(given = "Nicolas",
              person(given = "Daniela",
                     family = "Vairo",
                     role = c("aut")),
-            person(family = "Unidad de Metodos y Acceso a Datos (UMAD), Facultad de Ciencias Sociales", 
-                   role = c("dtc")),
+             person(family = "Unidad de Metodos y Acceso a Datos (UMAD)",
+                    role = c("dtc"))
                     )
 Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>
 Description: Provee un conjunto de datos de opinion publica en Uruguay en el periodo que va desde 1989 hasta
@@ -24,5 +24,4 @@ Depends:
     R (>= 3.6.0)
 BugReports: https://github.com/Nicolas-Schmidt/opuy/issues
 URL: https://github.com/Nicolas-Schmidt/opuy
-
-
+RoxygenNote: 7.1.0

@@ -1,0 +1,87 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# opuy
+
+*Nicolás Schmidt, Daniela Vairo*
+
+<!-- badges: start -->
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Travis build status](https://travis-ci.com/Nicolas-Schmidt/opuy.svg?branch=master)](https://travis-ci.com/Nicolas-Schmidt/opuy)
+<!-- badges: end -->
+
+
+> Datos de opinón pública de Uruguay 1989 - 2020. 
+
+### Descripción 
+
+Provee un conjunto de datos de opinión publica en Uruguay en el periodo que va desde 1989 hasta 2020. Asimismo, también se pueden obtener resúmenes agregados por año, por elección, por consultora o por indicador.
+
+El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
+
+
+
+
+### Instalación
+
+``` r
+## Versión en desarrollo
+source("https://install-github.me/Nicolas-Schmidt/opuy")
+```
+
+### Contenido del paquete
+
+#### Conjuntos de datos
+
+| Función |Descripción |
+| ----------------- | -------------------------------------------------------------- | 
+|`op_uy`|....|
+
+
+
+
+
+
+```{r, echo = FALSE, message = FALSE}
+manual <- function(){
+    old <- here::here()
+    path <- here::here('man', 'figures')
+    sink('noise.txt')
+    devtools::build_manual(path = path)
+    sink()
+    setwd(path)
+    invisible(file.rename(list.files(pattern="^opuy"), 'Manual_opuy.pdf'))
+    setwd(old)
+    invisible(file.remove('noise.txt'))
+}
+manual()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
