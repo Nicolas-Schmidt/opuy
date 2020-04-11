@@ -3,8 +3,6 @@
 
 # opuy
 
-*Nicolás Schmidt, Daniela Vairo*
-
 <!-- badges: start -->
 
 [![Project Status: Active – The project has reached a stable, usable
