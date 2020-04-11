@@ -1,4 +1,4 @@
-#'op_uy
+#'opuy
 #'
 #' Contiene dos indicadores relevantes de opinion publica relativo a las
 #' eleccione en Uruguay para el periodo 1989 - 2020: intencion de voto y evaluacion
@@ -21,6 +21,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name op_uy
-#' @usage data(op_uy)
+#' @usage data(opuy)
 #' @format data.frame con 4788 filas y 12 columnas
-'op_uy'
+'opuy'

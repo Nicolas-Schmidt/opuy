@@ -49,9 +49,35 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 | Función |Descripción |
 | ----------------- | -------------------------------------------------------------- | 
-|`op_uy`|....|
+|`opuy`|....|
 
 
+
+
+
+#### Ejemplo: Intenci[ón de voto para las elecciones nacionales de octubre de 2019
+
+```{r, eval = FALSE, message = FALSE}
+library(opuy)
+library(tidyverse)
+
+opuy %>%
+    filter(medicion == 'Intencion de voto',
+           tipo_eleccion == 'Nacional',
+           eleccion == 2019,
+           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>%
+    ggplot(aes(x = fecha, y = valor, color = empresa)) +
+    geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
+    geom_point(size = 1.5) +
+    ylim(0, 60) +
+    facet_wrap(~partido, nrow = 1, scales = "free") +
+    theme_minimal() +
+    labs(x = "", y = "", title = "")
+```
+
+
+
+<img src='man/figures/iv2019.gif'/>
 
 
 
