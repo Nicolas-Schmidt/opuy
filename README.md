@@ -41,7 +41,7 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 | ------- | ----------- |
 | `opuy`  | ….          |
 
-#### Ejemplo: Intención de voto para las elecciones nacionales de octubre de 2019
+#### Ejemplo
 
 ``` r
 library(opuy)
