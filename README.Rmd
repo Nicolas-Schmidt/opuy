@@ -61,6 +61,8 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 library(opuy)
 library(tidyverse)
 
+data(opuy)
+
 opuy %>%
     filter(medicion == 'Intencion de voto',
            tipo_eleccion == 'Nacional',
@@ -70,7 +72,7 @@ opuy %>%
     geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
     geom_point(size = 1.5) +
     ylim(0, 60) +
-    facet_wrap(~partido, nrow = 1, scales = "free") +
+    facet_wrap(~partido, nrow = 1) +
     theme_minimal() +
     labs(x = "", y = "", title = "")
 ```
@@ -80,6 +82,7 @@ opuy %>%
 <img src='man/figures/iv2019.gif'/>
 
 
+##### Resumen intención de voto 2019 de los principales partidos
 
 ```{r, echo = FALSE, message = FALSE}
 
@@ -106,6 +109,7 @@ tab <- opuy %>%
     arrange(-Porcentaje) %>% 
     rename('Votación real' = Porcentaje) 
 
+tab <- cbind(tab[,1], apply(tab[, -1], 2, function(x){paste0(x, "%")}))
 
 knitr::kable(tab)
 ```
