@@ -81,6 +81,41 @@ opuy %>%
 
 
 
+```{r, echo = FALSE, message = FALSE}
+
+library(magrittr)
+library(dplyr)
+library(Boreluy)
+library(opuy)
+
+e19  <- resultado_eleccion_uy(2019, 'Presidencial') %>%
+    select(Partido, Porcentaje) 
+tab <- opuy %>%
+    filter(medicion == 'Intencion de voto',
+           tipo_eleccion == 'Nacional',
+           eleccion == 2019,
+           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>%
+    group_by(partido) %>%
+    summarise('Valor Mínimo' = min(valor),
+              'Valor Máximo' = max(valor), 
+              'Valor Mínimo 2019' = min(valor[anio_medicion == 2019]),
+              'Valor Máximo 2019' = max(valor[anio_medicion == 2019])) %>%
+    ungroup() %>%
+    rename(Partido = partido) %>%
+    left_join(., e19, by = 'Partido') %>% 
+    arrange(-Porcentaje) %>% 
+    rename('Votacón real' = Porcentaje) 
+
+
+knitr::kable(tab)
+```
+
+
+
+
+
+
+
 
 ```{r, echo = FALSE, message = FALSE}
 manual <- function(){
