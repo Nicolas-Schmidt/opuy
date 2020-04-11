@@ -104,7 +104,7 @@ tab <- opuy %>%
     rename(Partido = partido) %>%
     left_join(., e19, by = 'Partido') %>% 
     arrange(-Porcentaje) %>% 
-    rename('Votacón real' = Porcentaje) 
+    rename('Votación real' = Porcentaje) 
 
 
 knitr::kable(tab)
@@ -138,7 +138,10 @@ manual()
 
 
 
+---
 
+##### Mantenedor
+Nicolás Schmidt (<nschmidt@cienciassociales.edu.uy>)
 
 
 

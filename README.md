@@ -63,9 +63,15 @@ opuy %>%
 
 <img src='man/figures/iv2019.gif'/>
 
-| Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votacón real |
-| :--------------- | -----------: | -----------: | ----------------: | ----------------: | -----------: |
-| Frente Amplio    |         24.0 |           43 |              27.0 |                43 |        39.26 |
-| Partido Nacional |         21.6 |           34 |              21.6 |                33 |        28.80 |
-| Partido Colorado |          3.0 |           22 |               9.0 |                22 |        12.41 |
-| Cabildo Abierto  |          1.0 |           12 |               1.0 |                12 |        11.11 |
+| Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votación real |
+| :--------------- | -----------: | -----------: | ----------------: | ----------------: | ------------: |
+| Frente Amplio    |         24.0 |           43 |              27.0 |                43 |         39.26 |
+| Partido Nacional |         21.6 |           34 |              21.6 |                33 |         28.80 |
+| Partido Colorado |          3.0 |           22 |               9.0 |                22 |         12.41 |
+| Cabildo Abierto  |          1.0 |           12 |               1.0 |                12 |         11.11 |
+
+-----
+
+##### Mantenedor
+
+Nicolás Schmidt (<nschmidt@cienciassociales.edu.uy>)
