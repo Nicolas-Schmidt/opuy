@@ -56,10 +56,14 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 #### Ejemplo
 
-```{r, eval = FALSE, message = FALSE}
+```{r}
 library(opuy)
-library(tidyverse)
+str(opuy)
+```
 
+```{r, eval = FALSE, message = FALSE}
+
+library(tidyverse)
 data(opuy)
 
 opuy %>%
