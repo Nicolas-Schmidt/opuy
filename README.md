@@ -36,9 +36,9 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 #### Conjuntos de datos
 
-| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 - 2020: **Intención de voto** y **Evaluación dela gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
+| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 - 2020: **Intención de voto** y **Evaluación de la gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
 
 #### Ejemplo
 
@@ -63,8 +63,8 @@ opuy %>%
     facet_wrap(~partido, nrow = 1) +
     hrbrthemes::theme_ipsum_tw(grid = "XY", axis = "xy") +
     labs(x = "",
-         color = "",
          y = "Porcentaje de votos",
+         color = "",
          title = "Intención de voto en eleccioens nacionales 2019",
          subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
