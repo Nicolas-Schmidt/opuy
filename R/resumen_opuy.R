@@ -27,7 +27,7 @@ resumen_opuy <- function(){
     rownames(op) <- op$anio_medicion
     op <- op[, -1]
     op[is.na(op)] <- "  - | -"
-    op <- rbind(paste(rep("-", max(nchar(names(op)))), collapse = ""), op)
+    op <- rbind(paste(rep("-", 11), collapse = ""), op) #max(nchar(names(op))))
     rownames(op)[1] <- "----"
     op
 }

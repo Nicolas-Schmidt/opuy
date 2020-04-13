@@ -69,7 +69,9 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 ## Conjunto de datos: 'opuy'
 
 library(opuy)
+
 resumen_opuy()
+
 ```
 
 ###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
