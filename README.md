@@ -112,7 +112,7 @@ opuy %>%
     labs(x = "",
          y = "Porcentaje de votos",
          color = "",
-         title = "Intención de voto en eleccioens nacionales 2019",
+         title = "Intención de voto en elecciones nacionales 2019",
          subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
 ```
