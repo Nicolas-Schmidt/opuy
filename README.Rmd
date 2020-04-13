@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
 
 # opuy
 
+*Nicolás Schmidt, Daniela Vairo, UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable
@@ -28,7 +29,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 ### Descripción 
 
-Provee un conjunto de datos de opinión publica en Uruguay en el periodo que va desde 1989 hasta 2020. Asimismo, también se pueden obtener resúmenes agregados por año, por elección, por consultora o por indicador.
+Provee un conjunto de datos de opinión publica en Uruguay en el periodo que va desde 1989 hasta 2020.
 
 El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
 
@@ -46,46 +47,59 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 #### Conjuntos de datos
 
-| Función |Descripción |
+| Nombre |Descripción |
 | ----------------- | -------------------------------------------------------------- | 
-|`opuy`|....|
+|`opuy`|Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 - 2020: __Intención de voto__ y __Evaluación dela gestión del Presidente__. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD).|
 
 
 
 
 
 #### Ejemplo
+###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
 
-```{r}
-library(opuy)
-str(opuy)
+```{r, echo = FALSE,  message = FALSE, warning = FALSE}
+library(extrafont)
 ```
-
-```{r, eval = FALSE, message = FALSE}
-
+```{r,  message = FALSE, warning = FALSE, fig.width=10, fig.height=6}
+library(opuy)
 library(tidyverse)
+
 data(opuy)
 
 opuy %>%
     filter(medicion == 'Intencion de voto',
            tipo_eleccion == 'Nacional',
-           eleccion == 2019,
-           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>%
+           anio_medicion == 2019, 
+           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>% 
+    mutate(partido = factor(partido, levels = c('Frente Amplio', 'Partido Colorado', 
+                                                'Partido Nacional', 'Cabildo Abierto'))) %>% 
     ggplot(aes(x = fecha, y = valor, color = empresa)) +
     geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
     geom_point(size = 1.5) +
-    ylim(0, 60) +
     facet_wrap(~partido, nrow = 1) +
-    theme_minimal() +
-    labs(x = "", y = "", title = "")
+    hrbrthemes::theme_ipsum_tw(grid = "XY", axis = "xy") +
+    labs(x = "",
+         color = "",
+         y = "Porcentaje de votos",
+         title = "Intención de voto en eleccioens nacionales 2019",
+         subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
+         caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
+
+
+  
+
 ```
+
+
+###### Intención de voto para elecciones nacionales de todas las consultoras para todo el período de medición de la elección de 2019 (2016 - 2019)
 
 
 
 <img src='man/figures/iv2019.gif'/>
 
 
-##### Resumen intención de voto 2019 de los principales partidos
+##### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
 
 ```{r, echo = FALSE, message = FALSE}
 
@@ -155,4 +169,8 @@ Nicolás Schmidt (<nschmidt@cienciassociales.edu.uy>)
 
 
 
+#### Notas
+
+---
+<sup><a id="fn.1" href="#fnr.1">1</a></sup> Unidad de Métodos y Acceso a Datos, Facultad de Ciencias Sociales, Universidad de la República (UMAD-FCS-UdelaR)
 

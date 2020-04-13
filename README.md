@@ -3,6 +3,9 @@
 
 # opuy
 
+*Nicolás Schmidt, Daniela Vairo,
+UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
+
 <!-- badges: start -->
 
 [![Project Status: Active – The project has reached a stable, usable
@@ -17,9 +20,7 @@ status](https://travis-ci.com/Nicolas-Schmidt/opuy.svg?branch=master)](https://t
 ### Descripción
 
 Provee un conjunto de datos de opinión publica en Uruguay en el periodo
-que va desde 1989 hasta 2020. Asimismo, también se pueden obtener
-resúmenes agregados por año, por elección, por consultora o por
-indicador.
+que va desde 1989 hasta 2020.
 
 El manual del paquete se puede encontrar
 [**aquí**](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
@@ -35,52 +36,47 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 #### Conjuntos de datos
 
-| Función | Descripción |
-| ------- | ----------- |
-| `opuy`  | ….          |
+| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 - 2020: **Intención de voto** y **Evaluación dela gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
 
 #### Ejemplo
 
+###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
+
 ``` r
 library(opuy)
-str(opuy)
-#> Classes 'tbl_df', 'tbl' and 'data.frame':    4788 obs. of  12 variables:
-#>  $ medicion     : chr  "Evaluacion de gestion presidente" "Evaluacion de gestion presidente" "Evaluacion de gestion presidente" "Evaluacion de gestion presidente" ...
-#>  $ empresa      : chr  "Cifra" "Cifra" "Cifra" "Cifra" ...
-#>  $ tipo_eleccion: chr  NA NA NA NA ...
-#>  $ anio_medicion: num  2000 2000 2000 2000 2000 ...
-#>  $ eleccion     : num  NA NA NA NA NA NA NA NA NA NA ...
-#>  $ fecha        : POSIXct, format: "2000-06-25" "2000-06-25" ...
-#>  $ partido      : chr  "Partido Colorado" "Partido Colorado" "Partido Colorado" "Partido Colorado" ...
-#>  $ sigla        : chr  "PC" "PC" "PC" "PC" ...
-#>  $ candidato    : chr  NA NA NA NA ...
-#>  $ presidente   : chr  "Batlle" "Batlle" "Batlle" "Batlle" ...
-#>  $ categoria    : chr  "Aprueba" "Ni aprueba ni desaprueba" "Desaprueba" "No sabe o no contesta" ...
-#>  $ valor        : num  54 17 23 6 39 25 31 5 67 19 ...
-```
-
-``` r
-
 library(tidyverse)
+
 data(opuy)
 
 opuy %>%
     filter(medicion == 'Intencion de voto',
            tipo_eleccion == 'Nacional',
-           eleccion == 2019,
-           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>%
+           anio_medicion == 2019, 
+           sigla %in% c('FA', 'PC', 'PN', 'CA')) %>% 
+    mutate(partido = factor(partido, levels = c('Frente Amplio', 'Partido Colorado', 
+                                                'Partido Nacional', 'Cabildo Abierto'))) %>% 
     ggplot(aes(x = fecha, y = valor, color = empresa)) +
     geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
     geom_point(size = 1.5) +
-    ylim(0, 60) +
     facet_wrap(~partido, nrow = 1) +
-    theme_minimal() +
-    labs(x = "", y = "", title = "")
+    hrbrthemes::theme_ipsum_tw(grid = "XY", axis = "xy") +
+    labs(x = "",
+         color = "",
+         y = "Porcentaje de votos",
+         title = "Intención de voto en eleccioens nacionales 2019",
+         subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
+         caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
 ```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+###### Intención de voto para elecciones nacionales de todas las consultoras para todo el período de medición de la elección de 2019 (2016 - 2019)
 
 <img src='man/figures/iv2019.gif'/>
 
-##### Resumen intención de voto 2019 de los principales partidos
+##### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
 
 | Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votación real |
 | :--------------- | :----------- | :----------- | :---------------- | :---------------- | :------------ |
@@ -94,3 +90,11 @@ opuy %>%
 ##### Mantenedor
 
 Nicolás Schmidt (<nschmidt@cienciassociales.edu.uy>)
+
+#### Notas
+
+-----
+
+<sup><a id="fn.1" href="#fnr.1">1</a></sup> Unidad de Métodos y Acceso a
+Datos, Facultad de Ciencias Sociales, Universidad de la República
+(UMAD-FCS-UdelaR)
