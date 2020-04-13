@@ -24,4 +24,9 @@ Depends:
     R (>= 3.6.0)
 BugReports: https://github.com/Nicolas-Schmidt/opuy/issues
 URL: https://github.com/Nicolas-Schmidt/opuy
+Imports:
+    dplyr,
+    magrittr,
+    purrr, 
+    tidyr
 RoxygenNote: 7.1.0

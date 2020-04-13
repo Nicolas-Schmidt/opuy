@@ -34,6 +34,12 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 ### Contenido del paquete
 
+#### Funciones
+
+| Nombre         | Descripción                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| `resumen_opuy` | Resumen de los indicadores que contiene la base de datos por consultora |
+
 #### Conjuntos de datos
 
 | Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -42,10 +48,84 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 #### Ejemplo
 
+``` r
+## Conjunto de datos: 'opuy'
+
+library(opuy)
+resumen_opuy()
+#>             Cifra      Equipos       Factum Interconsult       Opcion
+#> ---- ------------ ------------ ------------ ------------ ------------
+#> 1989        - | -        IV| -        - | -        - | -        - | -
+#> 1990        - | -        IV|EG        - | -        - | -        - | -
+#> 1991        - | -        IV|EG        - | -        - | -        - | -
+#> 1992        - | -        IV|EG        - | -        - | -        - | -
+#> 1993        IV| -        IV|EG        IV| -        - | -        - | -
+#> 1994        IV| -        IV|EG        IV| -        - | -        - | -
+#> 1995        - | -        - |EG        IV| -        - | -        - | -
+#> 1996        - | -        - |EG        IV| -        - | -        - | -
+#> 1997        - | -        IV|EG        IV| -        - | -        - | -
+#> 1998        - | -        IV|EG        IV| -        IV| -        - | -
+#> 1999        IV| -        IV|EG        IV| -        IV| -        - | -
+#> 2000        - |EG        - |EG        IV|EG        - | -        - | -
+#> 2001        - | -        - |EG        IV|EG        - | -        - | -
+#> 2002        - | -        IV|EG        IV|EG        - | -        - | -
+#> 2003        IV| -        - |EG        IV| -        IV| -        - | -
+#> 2004        IV| -        IV|EG        IV| -        IV| -        - | -
+#> 2005        - |EG        - |EG        - | -        IV|EG        - | -
+#> 2006        - | -        - |EG        - |EG        IV|EG        - | -
+#> 2007        - | -        - |EG        IV| -        IV|EG        - | -
+#> 2008        IV|EG        IV|EG        IV| -        IV|EG        - | -
+#> 2009        IV| -        IV|EG        IV| -        IV| -        - | -
+#> 2010        - |EG        IV|EG        IV|EG        - |EG        - | -
+#> 2011        IV|EG        IV|EG        IV| -        - | -        - | -
+#> 2012        IV|EG        IV|EG        IV| -        - | -        - | -
+#> 2013        IV|EG        IV|EG        IV| -        IV| -        - | -
+#> 2014        IV|EG        IV|EG        IV| -        IV| -        IV|EG
+#> 2015        - |EG        IV|EG        - |EG        - | -        - |EG
+#> 2016        IV|EG        IV|EG        IV|EG        IV| -        IV|EG
+#> 2017        IV|EG        IV|EG        IV|EG        IV| -        IV|EG
+#> 2018        IV|EG        IV|EG        IV| -        - | -        IV|EG
+#> 2019        IV|EG        IV|EG        IV| -        - | -        IV|EG
+#> .NA.        - |EG        - | -        IV| -        - | -        - | -
+#>             Radar
+#> ---- ------------
+#> 1989        - | -
+#> 1990        - | -
+#> 1991        - | -
+#> 1992        - | -
+#> 1993        - | -
+#> 1994        - | -
+#> 1995        - | -
+#> 1996        - | -
+#> 1997        - | -
+#> 1998        IV| -
+#> 1999        IV| -
+#> 2000        - | -
+#> 2001        - | -
+#> 2002        - | -
+#> 2003        IV| -
+#> 2004        IV| -
+#> 2005        - |EG
+#> 2006        - | -
+#> 2007        - | -
+#> 2008        IV| -
+#> 2009        IV| -
+#> 2010        - | -
+#> 2011        - | -
+#> 2012        IV|EG
+#> 2013        IV| -
+#> 2014        IV| -
+#> 2015        - | -
+#> 2016        - | -
+#> 2017        IV| -
+#> 2018        IV| -
+#> 2019        IV| -
+#> .NA.        - | -
+```
+
 ###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
 
 ``` r
-library(opuy)
 library(tidyverse)
 
 data(opuy)
@@ -70,7 +150,7 @@ opuy %>%
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ###### Intención de voto para elecciones nacionales de todas las consultoras para todo el período de medición de la elección de 2019 (2016 - 2019)
 

@@ -45,6 +45,14 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 ### Contenido del paquete
 
+
+#### Funciones
+
+| Nombre |Descripción |
+| ----------------- | -------------------------------------------------------------- | 
+|`resumen_opuy`|Resumen de los indicadores que contiene la base de datos por consultora|
+
+
 #### Conjuntos de datos
 
 | Nombre |Descripción |
@@ -56,13 +64,20 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 
 
 #### Ejemplo
+
+```{r}
+## Conjunto de datos: 'opuy'
+
+library(opuy)
+resumen_opuy()
+```
+
 ###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
 
 ```{r, echo = FALSE,  message = FALSE, warning = FALSE}
 library(extrafont)
 ```
 ```{r,  message = FALSE, warning = FALSE, fig.width=10, fig.height=6}
-library(opuy)
 library(tidyverse)
 
 data(opuy)
