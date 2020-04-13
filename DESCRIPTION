@@ -17,7 +17,7 @@ Authors@R: c(person(given = "Nicolas",
 Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>
 Description: Provee un conjunto de datos de opinion publica en Uruguay en el periodo que va desde 1989 hasta
     2020. Asimismo tambien se pueden obtener resumenes agregados por anio, por eleccion, por consultora o por indicador.
-License: GPL-3
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
