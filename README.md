@@ -95,7 +95,6 @@ resumen_opuy()
 #> 2017       IV|EG       IV|EG       IV|EG        IV| -       IV|EG       IV| -
 #> 2018       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
 #> 2019       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
-#> .NA.       - |EG       - | -       IV| -        - | -       - | -       - | -
 #> 
 #> IV: Intencion de Voto
 #> EG: Evaluacion de gestion

@@ -23,7 +23,7 @@ resumen_opuy <- function(){
         arrange(anio_medicion) %>%
         as.data.frame()
 
-    op$anio_medicion[32] <- ".NA."  ## arreglar index
+    #op$anio_medicion[32] <- ".NA."  ## arreglar index
     rownames(op) <- op$anio_medicion
     op <- op[, -1]
     op[is.na(op)] <- "  - | -"
@@ -35,3 +35,5 @@ resumen_opuy <- function(){
     cat("\nIV: Intencion de Voto\nEG: Evaluacion de gestion\n\n")
     cat("-----------------------------------------------------------------------------\n")
 }
+
+
