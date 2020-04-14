@@ -6,7 +6,7 @@
 \alias{opuy}
 \title{opuy}
 \format{
-data.frame con 4788 filas y 12 columnas
+data.frame con 4788 filas y 14 columnas
 }
 \usage{
 data(opuy)
@@ -23,11 +23,15 @@ de las empresas consultoras que realizan las encuestas.
    \item{empresa}{}
    \item{tipo_eleccion}{}
    \item{anio_medicion}{}
+   \item{anio_gobierno}{}
    \item{eleccion}{}
    \item{fecha}{}
    \item{partido}{}
    \item{sigla}{}
    \item{candidato}{}
+   \item{presidente}{}
+   \item{categoria}{}
+   \item{categoria_unificada}{}
    \item{valor}{}
 
 }

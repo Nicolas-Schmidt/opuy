@@ -10,11 +10,15 @@
 #'    \item{empresa}{}
 #'    \item{tipo_eleccion}{}
 #'    \item{anio_medicion}{}
+#'    \item{anio_gobierno}{}
 #'    \item{eleccion}{}
 #'    \item{fecha}{}
 #'    \item{partido}{}
 #'    \item{sigla}{}
 #'    \item{candidato}{}
+#'    \item{presidente}{}
+#'    \item{categoria}{}
+#'    \item{categoria_unificada}{}
 #'    \item{valor}{}
 #'
 #' }
@@ -22,5 +26,5 @@
 #' @keywords datasets
 #' @name op_uy
 #' @usage data(opuy)
-#' @format data.frame con 4788 filas y 12 columnas
+#' @format data.frame con 4788 filas y 14 columnas
 'opuy'
