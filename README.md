@@ -156,7 +156,6 @@ opuy %>%
     summarise(promedio = mean(valor, na.rm = TRUE)) %>%
     ungroup() %>%
     na.omit() %>%
-    arrange(presidente) %>%
     mutate(presidente = factor(presidente, levels = c("Lacalle", "Sanguinetti 2", 
                                                       "Batlle", "Vazquez 1", "Mujica", 
                                                       "Vazquez 2"))) %>% 
