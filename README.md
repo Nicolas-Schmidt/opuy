@@ -145,6 +145,36 @@ opuy %>%
 | Partido Colorado | 3%           | 22%          | 9%                | 22%               | 12.41%        |
 | Cabildo Abierto  | 1%           | 12%          | 1%                | 12%               | 11.11%        |
 
+#### Evaluación de la gestión del presidente
+
+``` r
+opuy %>%
+    filter(medicion == 'Evaluacion de gestion presidente',
+           categoria_unificada == 3) %>%
+    select(anio_gobierno, empresa, valor, presidente) %>%
+    group_by(empresa, anio_gobierno, presidente) %>%
+    summarise(promedio = mean(valor, na.rm = TRUE)) %>%
+    ungroup() %>%
+    na.omit() %>%
+    arrange(presidente) %>%
+    mutate(presidente = factor(presidente, levels = c("Lacalle", "Sanguinetti 2", 
+                                                      "Batlle", "Vazquez 1", "Mujica", 
+                                                      "Vazquez 2"))) %>% 
+    ggplot(aes(x = factor(anio_gobierno), y = promedio, color = empresa)) +
+    geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
+    geom_point(size = 1.5) +
+    facet_wrap(~presidente, nrow = 1) +
+    hrbrthemes::theme_ipsum_tw(grid = "XY", axis = "xy") +
+    labs(x = "Año de gobierno",
+         y = "Porcentaje de aprobación",
+         color = "", 
+         title = "Evaluacion de la gestión del presidente",
+         subtitle = 'Serie histórica con datos de todas las consultoras',
+         caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
 -----
 
 ##### Mantenedor
