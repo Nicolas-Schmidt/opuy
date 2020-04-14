@@ -6,7 +6,7 @@
 #' de las empresas consultoras que realizan las encuestas.
 #'
 #'\describe{
-#'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: Intencio de voto y Evaluacion de la gestion del Presidente.}
+#'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: Intencion de voto y Evaluacion de la gestion del Presidente.}
 #'    \item{empresa}{Nombre de la empresa consultora que hizo la medicion.}
 #'    \item{tipo_eleccion}{Tipo de eleccion: Nacional, Balotaje o Internas. Esta variables es util para el indicador 'Intencion de voto'.}
 #'    \item{anio_medicion}{Anio en el que se publico la medicion.}
