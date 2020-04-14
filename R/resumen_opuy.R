@@ -29,5 +29,9 @@ resumen_opuy <- function(){
     op[is.na(op)] <- "  - | -"
     op <- rbind(paste(rep("-", 11), collapse = ""), op) #max(nchar(names(op))))
     rownames(op)[1] <- "----"
-    op
+
+    cat("\n\n---- Resumen de Indicadores por anio y consultora ---------------------------\n\n\n")
+    print(op)
+    cat("\nIV: Intencion de Voto\nEG: Evaluacion de gestion\n\n")
+    cat("-----------------------------------------------------------------------------\n")
 }

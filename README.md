@@ -57,6 +57,11 @@ source("https://install-github.me/Nicolas-Schmidt/opuy")
 library(opuy)
 
 resumen_opuy()
+#> 
+#> 
+#> ---- Resumen de Indicadores por anio y consultora ---------------------------
+#> 
+#> 
 #>            Cifra     Equipos      Factum Interconsult      Opcion       Radar
 #> ---- ----------- ----------- -----------  ----------- ----------- -----------
 #> 1989       - | -       IV| -       - | -        - | -       - | -       - | -
@@ -91,6 +96,11 @@ resumen_opuy()
 #> 2018       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
 #> 2019       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
 #> .NA.       - |EG       - | -       IV| -        - | -       - | -       - | -
+#> 
+#> IV: Intencion de Voto
+#> EG: Evaluacion de gestion
+#> 
+#> -----------------------------------------------------------------------------
 ```
 
 ###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
