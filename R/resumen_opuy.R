@@ -1,7 +1,7 @@
 
 #' @title resumen opuy
-#' @description Resumen de los indicadores que contiene la base de datos por consultora
-#' @return data.frame
+#' @description Resumen de los indicadores que contiene la base de datos por consultora.
+#' @return data.frame que contiene los indicadores que cada consultora realizó por anio.
 #' @examples
 #' resumen_opuy()
 #' @export

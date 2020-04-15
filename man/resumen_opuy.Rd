@@ -7,10 +7,10 @@
 resumen_opuy()
 }
 \value{
-data.frame
+data.frame que contiene los indicadores que cada consultora realizó por anio.
 }
 \description{
-Resumen de los indicadores que contiene la base de datos por consultora
+Resumen de los indicadores que contiene la base de datos por consultora.
 }
 \examples{
 resumen_opuy()

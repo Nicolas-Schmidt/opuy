@@ -1,26 +1,25 @@
 #'opuy
 #'
-#' Contiene dos indicadores relevantes de opinion publica relativos a las
-#' elecciones en Uruguay para el periodo 1989 - 2020: intencion de voto y evaluacion
-#' de la gestion del presidente. Los datos son agregados y provienen de la divulgacion
+#' Contiene dos indicadores relevantes de opinión publica relativos a las
+#' elecciones en Uruguay para el periodo 1989 - 2020: intención de voto y evaluación
+#' de la gestión del presidente. Los datos son agregados y provienen de la divulgación
 #' de las empresas consultoras que realizan las encuestas.
 #'
 #'\describe{
-#'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: Intencion de voto y Evaluacion de la gestion del Presidente.}
-#'    \item{empresa}{Nombre de la empresa consultora que hizo la medicion.}
-#'    \item{tipo_eleccion}{Tipo de eleccion: Nacional, Balotaje o Internas. Esta variable es util para el indicador 'Intencion de voto'.}
-#'    \item{anio_medicion}{Anio en el que se publico la medicion.}
-#'    \item{anio_gobierno}{Anio de gobierno. Esta variable es un numero entero que va desde el 1 hasta el 5 indicando respectivamente el anio de gobierno. Es particularmente util para el indicador 'Evaluacion de la gestion del Presidente'. Con esta variable es mas simple realizar comparaciones entre Presidentes.}
-#'    \item{eleccion}{Esta variable refiere al anio de la eleccion a la que esta asociada la medicion. Por ejemplo, se puede tener una medicion de Intencion de Voto del anio 2017, y esta corresponde a la eleccion de 2019.}
-#'    \item{fecha}{Fecha de cierre de campo declarado por la empresa consultora.}
-#'    \item{partido}{Nombre del partido politico.}
-#'    \item{sigla}{Sigla del partido politico.}
-#'    \item{candidato}{Nombre del candidato para el caso de la Intencion de voto en elecciones internas y en Balotage.}
-#'    \item{presidente}{Nombre del Presidente para la medicion Evaluacion de la gestion del presidente.}
-#'    \item{categoria}{Categoria original de la medicion para el caso de Evaluacion de la gestion del presidente. Esta variable se mide comunmente en escala de Likert.}
-#'    \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras.}
+#'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: \emph{Intención de voto} y \emph{Evaluación de la gestión del Presidente}.}
+#'    \item{empresa}{Nombre de la empresa consultora que realizó la medición.}
+#'    \item{tipo_eleccion}{Tipo de elección: \emph{Nacional}, \emph{Balotaje} o \emph{Internas}. Esta variable es útil para el indicador 'Intención de voto'.}
+#'    \item{anio_medicion}{Anio en el que se publicó la medición.}
+#'    \item{anio_gobierno}{Anio de gobierno. Esta variable es un número entero que va desde el 1 hasta el 5 indicando respectivamente el anio de gobierno (1 = primer anio de gobierno, 2 = segundo anio de gobierno...). Es particularmente útil para el indicador 'Evaluación de la gestión del Presidente'. Con esta variable es más simple realizar comparaciones entre Presidentes según anio de gobierno.}
+#'    \item{eleccion}{Esta variable refiere al anio de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
+#'    \item{fecha}{Fecha de cierre de campo declarado por la empresa consultora. En algunos casos es posible que la fecha sea la de publicación de la medición.}
+#'    \item{partido}{Nombre del partido político.}
+#'    \item{sigla}{Sigla del partido político.}
+#'    \item{candidato}{Nombre del candidato para el caso de la Intención de Voto en elecciones Internas y en Balotaje.}
+#'    \item{presidente}{Nombre del Presidente para la medición Evaluación de la gestión del Presidente.}
+#'    \item{categoria}{Categoría original de la medición para el caso de Evaluación de la gestión del Presidente. Esta variable comúnmente se mide en escala de Likert (e.g. Muy Mala, Mala, Regular, Buena, Muy buena)}
+#'    \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dió el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
 #'    \item{valor}{Valor del indicador en porcentaje.}
-#'
 #' }
 #' @docType data
 #' @keywords datasets
