@@ -167,7 +167,7 @@ opuy %>%
          y = "Porcentaje de aprobación",
          color = "", 
          title = "Evaluacion de la gestión del presidente",
-         subtitle = 'Serie histórica con datos de todas las consultoras',
+         subtitle = 'Serie histórica con datos de todas las consultoras (promedios anuales)',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
 ```
 
