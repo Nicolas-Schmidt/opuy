@@ -155,7 +155,6 @@ opuy %>%
     group_by(empresa, anio_gobierno, presidente) %>%
     summarise(promedio = mean(valor, na.rm = TRUE)) %>%
     ungroup() %>%
-    na.omit() %>%
     mutate(presidente = factor(presidente, levels = c("Lacalle", "Sanguinetti 2", 
                                                       "Batlle", "Vazquez 1", "Mujica", 
                                                       "Vazquez 2", "Lacalle Pou"))) %>% 
@@ -170,8 +169,6 @@ opuy %>%
          title = "Evaluacion de la gestión del presidente",
          subtitle = 'Serie histórica con datos de todas las consultoras (promedios anuales)',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
-#> geom_path: Each group consists of only one observation. Do you need to adjust
-#> the group aesthetic?
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
