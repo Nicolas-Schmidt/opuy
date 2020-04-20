@@ -95,6 +95,7 @@ resumen_opuy()
 #> 2017       IV|EG       IV|EG       IV|EG        IV| -       IV|EG       IV| -
 #> 2018       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
 #> 2019       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
+#> 2020       - |EG       - |EG       - | -        - | -       - | -       - | -
 #> 
 #> IV: Intencion de Voto
 #> EG: Evaluacion de gestion
@@ -157,7 +158,7 @@ opuy %>%
     na.omit() %>%
     mutate(presidente = factor(presidente, levels = c("Lacalle", "Sanguinetti 2", 
                                                       "Batlle", "Vazquez 1", "Mujica", 
-                                                      "Vazquez 2"))) %>% 
+                                                      "Vazquez 2", "Lacalle Pou"))) %>% 
     ggplot(aes(x = factor(anio_gobierno), y = promedio, color = empresa)) +
     geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
     geom_point(size = 1.5) +
@@ -169,6 +170,8 @@ opuy %>%
          title = "Evaluacion de la gestión del presidente",
          subtitle = 'Serie histórica con datos de todas las consultoras (promedios anuales)',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
+#> geom_path: Each group consists of only one observation. Do you need to adjust
+#> the group aesthetic?
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
