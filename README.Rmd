@@ -127,7 +127,7 @@ library(dplyr)
 library(Boreluy)
 library(opuy)
 
-e19  <- resultado_eleccion_uy(2019, 'Presidencial') %>%
+e19  <- Boreluy::nacional_uy(eleccion = 2019) %>%
     select(Partido, Porcentaje) 
 tab <- opuy %>%
     filter(medicion == 'Intencion de voto',
