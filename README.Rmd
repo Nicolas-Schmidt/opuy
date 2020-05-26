@@ -152,7 +152,7 @@ knitr::kable(tab)
 
 #### Evaluación de la gestión del presidente 
 
-```{r, fig.width=12, fig.height=5, message = FALSE}
+```{r, fig.width=12, fig.height=5, message = FALSE, warning=FALSE}
 opuy %>%
     filter(medicion == 'Evaluacion de gestion presidente',
            categoria_unificada == 3) %>%
