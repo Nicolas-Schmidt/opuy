@@ -123,7 +123,7 @@ opuy %>%
     facet_wrap(~partido, nrow = 1) +
     hrbrthemes::theme_ipsum_tw(grid = "XY", axis = "xy") +
     labs(x = "",
-         y = "Porcentaje de votos",
+         y = "Porcentaje de votos %",
          color = "",
          title = "Intención de voto en elecciones nacionales 2019",
          subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
