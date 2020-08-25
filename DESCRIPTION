@@ -10,7 +10,8 @@ Authors@R: c(person(given = "Nicolas",
                     comment = c(ORCID = "0000-0001-5083-5792")),
              person(given = "Daniela",
                     family = "Vairo",
-                    role = c("aut")),
+                    role = c("aut"), 
+                    comment = c(ORCID =0000-0003-4426-6460)),
              person(family = "Unidad de Metodos y Acceso a Datos (UMAD)",
                     role = c("dtc"))
                     )
