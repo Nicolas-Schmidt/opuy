@@ -13,9 +13,9 @@ status](https://github.com/Nicolas-Schmidt/opuy/workflows/R-CMD-check/badge.svg)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-![Minimal RVersion](https://img.shields.io/badge/R%3E%3D-3.6.0-blue.svg)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/badge/devel%20version-0.1.0.991-blue.svg)](https://github.com/Nicolas-Schmidt/opuy)
 <!-- badges: end -->
 
 > Datos de opinón pública de Uruguay 1989 - 2020.
