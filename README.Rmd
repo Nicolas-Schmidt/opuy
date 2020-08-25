@@ -35,7 +35,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 Provee un conjunto de datos de opinión publica en Uruguay para el periodo que va desde 1989 hasta 2020 de dos indicadores relevante para el estudio de la realidad política del país: __intención de voto__ y __evaluación de gestión del presidente__.
 
-El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
+El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-Schmidt/opuy/blob/master/man/figures/Manual_opuy.pdf).
 
 
 
