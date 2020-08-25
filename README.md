@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# opuy
+# op<b style='color:blue'>uy</b>
 
 *Nicolás Schmidt, Daniela Vairo,
 UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
@@ -22,8 +22,10 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 
 ### Descripción
 
-Provee un conjunto de datos de opinión publica en Uruguay en el periodo
-que va desde 1989 hasta 2020.
+Provee un conjunto de datos de opinión publica en Uruguay para el
+periodo que va desde 1989 hasta 2020 de dos indicadores relevante para
+el estudio de la realidad política del país: **intención de voto** y
+**evaluación de gestión del presidente**.
 
 El manual del paquete se puede encontrar
 [**aquí**](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
@@ -140,8 +142,8 @@ opuy %>%
 
 | Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votación real |
 | :--------------- | :----------- | :----------- | :---------------- | :---------------- | :------------ |
-| Frente Amplio    | 24%          | 43%          | 27%               | 43%               | 39.26%        |
-| Partido Nacional | 21.6%        | 34%          | 21.6%             | 33%               | 28.8%         |
+| Frente Amplio    | 24%          | 43%          | 27%               | 43%               | 39.25%        |
+| Partido Nacional | 21.6%        | 34%          | 21.6%             | 33%               | 28.79%        |
 | Partido Colorado | 3%           | 22%          | 9%                | 22%               | 12.41%        |
 | Cabildo Abierto  | 1%           | 12%          | 1%                | 12%               | 11.11%        |
 

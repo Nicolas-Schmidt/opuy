@@ -15,7 +15,9 @@ Authors@R: c(person(given = "Nicolas",
                     role = c("dtc"))
                     )
 Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>
-Description: Provee un conjunto de datos de opinion publica en Uruguay para el periodo que va desde 1989 hasta 2020.
+Description: Provee un conjunto de datos de opinion publica en Uruguay para el periodo que va desde 
+    1989 hasta 2020 de dos indicadores relevante para el estudio de la realidad politica del pais: Intencion de voto y 
+    Evaluacion de gestion del presidente.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
