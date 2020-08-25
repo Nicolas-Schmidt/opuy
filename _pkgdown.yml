@@ -1,3 +1,27 @@
 template:
   params:
     bootswatch: flatly
+
+
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    right:
+    - home
+    - github
+    - twitter
+  components:
+    reference:
+      text: Reference
+      href: reference/index.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/Nicolas-Schmidt/opuy/
+    twitter:
+      icon: fa-twitter fa-lg
+      href: https://twitter.com/umad_fcs
+
+
+
