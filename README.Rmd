@@ -24,6 +24,7 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 `r badger::badge_devel("Nicolas-Schmidt/opuy", "blue")`
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/253661638.svg)](https://zenodo.org/badge/latestdoi/253661638)
 
 <!-- badges: end -->
 
