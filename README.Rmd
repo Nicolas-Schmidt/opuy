@@ -198,6 +198,13 @@ manual()
 ```
 
 
+#### Citar
+
+Para citar el paquete `opuy` en publicaciones use:
+
+```{r}
+citation(package = 'opuy')
+```
 
 
 

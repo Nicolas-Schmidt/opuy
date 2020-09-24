@@ -30,7 +30,7 @@ el estudio de la realidad política del país: **intención de voto** y
 **evaluación de gestión del presidente**.
 
 El manual del paquete se puede encontrar
-[**aquí**](https://github.com/Nicolas-Schmidt/Boreluy/blob/master/man/figures/Manual_opuy.pdf).
+[**aquí**](https://github.com/Nicolas-Schmidt/opuy/blob/master/man/figures/Manual_opuy.pdf).
 
 ### Instalación
 
@@ -176,6 +176,25 @@ opuy %>%
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+#### Citar
+
+Para citar el paquete `opuy` en publicaciones use:
+
+``` r
+citation(package = 'opuy')
+#> 
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {opuy: Datos de Opinion Publica de Uruguay 1989 - 2020},
+#>     author = {Nicolas Schmidt and Daniela Vairo and {UMAD}},
+#>     year = {2020},
+#>     note = {R package version 0.1.1},
+#>     url = {https://nicolas-schmidt.github.io/opuy/},
+#>   }
+```
 
 -----
 
