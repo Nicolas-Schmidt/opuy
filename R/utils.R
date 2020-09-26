@@ -3,9 +3,7 @@
 #' @importFrom stats na.omit
 #' @importFrom magrittr %>%
 
-
 vars <- c('anio_medicion', 'empresa', 'indicador', 'medicion', 'opuy')
-
 if(getRversion() >= "2.15.1"){
     utils::globalVariables(c('.', vars))
     utils::suppressForeignCheck(c('.', vars))
