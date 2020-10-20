@@ -8,6 +8,8 @@ UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/opuy)](https://CRAN.R-project.org/package=opuy)
 [![R build
 status](https://github.com/Nicolas-Schmidt/opuy/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/opuy/actions)
 [![Project Status: Active – The project has reached a stable, usable
