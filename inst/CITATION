@@ -1,7 +1,7 @@
 citEntry(
   entry    = "Manual",
   title    = "opuy: Datos de Opinion Publica de Uruguay 1989 - 2020",
-  author   = "Nicolas Schmidt, Daniela Vairo, UMAD",
+  author   = "Nicolas Schmidt, Daniela Vairo, Martin Opertti, UMAD",
   year     = 2020,
   note     = "R package version 0.1.1",
   url      = "https://nicolas-schmidt.github.io/opuy/",

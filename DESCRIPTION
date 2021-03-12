@@ -2,7 +2,7 @@ Package: opuy
 Type: Package
 Title: Datos de Opinion Publica de Uruguay 1989 - 2020
 Version: 0.1.1
-Author: Nicolas Schmidt [aut, cre], Daniela Vairo [aut], Unidad de Metodos y Acceso a Datos (UMAD) [dtc]
+Author: Nicolas Schmidt [aut, cre], Daniela Vairo [aut], Martin Opertti [aut], Unidad de Metodos y Acceso a Datos (UMAD) [dtc]
 Authors@R: c(person(given = "Nicolas", 
                     family = "Schmidt", 
                     role = c("aut", "cre"), 
@@ -12,6 +12,9 @@ Authors@R: c(person(given = "Nicolas",
                     family = "Vairo",
                     role = c("aut"), 
                     comment = c(ORCID = "0000-0003-4426-6460")),
+             person(given = "Martin",
+                    family = "Opertti",
+                    role = c("aut")),     
              person(family = "Unidad de Metodos y Acceso a Datos (UMAD)",
                     role = c("dtc"))
                     )

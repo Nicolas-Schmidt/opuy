@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 # op<b style='color:blue'>uy</b>
 
-*Nicolás Schmidt, Daniela Vairo, UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
+*Nicolás Schmidt, Daniela Vairo, Martín Opertti, UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/opuy)](https://CRAN.R-project.org/package=opuy)
@@ -183,7 +183,7 @@ opuy %>%
 
 
 
-```{r, echo = FALSE, message = FALSE}
+```{r, echo = FALSE, message = FALSE, eval = F}
 manual <- function(){
     old <- here::here()
     path <- here::here('man', 'figures')

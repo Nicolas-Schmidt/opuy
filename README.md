@@ -3,7 +3,7 @@
 
 # op<b style='color:blue'>uy</b>
 
-*Nicolás Schmidt, Daniela Vairo,
+*Nicolás Schmidt, Daniela Vairo, Martín Opertti,
 UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
 
 <!-- badges: start -->
@@ -143,6 +143,8 @@ opuy %>%
 <img src='man/figures/iv2019.gif'/>
 
 ##### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
+
+    #> Warning: package 'magrittr' was built under R version 4.0.3
 
 | Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votación real |
 | :--------------- | :----------- | :----------- | :---------------- | :---------------- | :------------ |
