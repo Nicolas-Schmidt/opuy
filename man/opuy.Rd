@@ -5,7 +5,7 @@
 \alias{opuy}
 \title{opuy}
 \format{
-data.frame con 4788 filas y 14 columnas
+data.frame con 4851 filas y 14 columnas
 }
 \usage{
 data(opuy)

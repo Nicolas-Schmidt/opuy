@@ -142,7 +142,7 @@ opuy %>%
     arrange(presidente) %>%
     mutate(presidente = factor(presidente, levels = c("Lacalle", "Sanguinetti 2",
                                                       "Batlle", "Vazquez 1", "Mujica",
-                                                      "Vazquez 2"))) %>%
+                                                      "Vazquez 2", "Lacalle Pou"))) %>%
     ggplot(aes(x = anio_medicion, y = promedio, color = empresa)) +
     geom_line(aes(group = empresa), size = 1, alpha = 0.6) +
     geom_point(size = 1.5) +
