@@ -154,5 +154,3 @@ opuy %>%
          title = "Evaluacion de la gestión del presidente",
          subtitle = 'Serie historica con datos de todas las consultoras',
          caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
-
-

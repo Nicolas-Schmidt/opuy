@@ -5,11 +5,11 @@
 
 #opuy <- readxl::read_excel("data-raw/opuy.xlsx")
 
-opuy <- readxl::read_excel("data-raw/opuy.xlsx", col_types = c("text", "text", "text",
-                   "numeric", "numeric", "numeric", "numeric", "text", "text", "text",
-                   "text", "text", "numeric", "numeric"))
-
-
+opuy <- readxl::read_excel("data-raw/opuy.xlsx",
+                           col_types = c("text", "text", "text", "numeric",
+                                         "numeric", "numeric", "numeric",
+                                         "text", "text", "text", "text",
+                                         "text", "numeric", "numeric"))
 
 str(opuy)
 opuy$fecha <- janitor::excel_numeric_to_date(opuy$fecha)
