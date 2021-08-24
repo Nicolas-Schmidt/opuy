@@ -193,7 +193,7 @@ citation(package = 'opuy')
 #> 
 #>   @Manual{,
 #>     title = {opuy: Datos de Opinion Publica de Uruguay 1989 - 2020},
-#>     author = {Nicolas Schmidt and Daniela Vairo and {UMAD}},
+#>     author = {Nicolas Schmidt, Daniela Vairo, Martín Opertti and {UMAD}},
 #>     year = {2020},
 #>     note = {R package version 0.1.1},
 #>     url = {https://nicolas-schmidt.github.io/opuy/},
