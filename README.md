@@ -15,21 +15,21 @@ status](https://github.com/Nicolas-Schmidt/opuy/workflows/R-CMD-check/badge.svg)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![](https://img.shields.io/badge/devel%20version-0.1.1-blue.svg)](https://github.com/Nicolas-Schmidt/opuy)
+[![](https://img.shields.io/badge/devel%20version-0.1.1001-blue.svg)](https://github.com/Nicolas-Schmidt/opuy)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/253661638.svg)](https://zenodo.org/badge/latestdoi/253661638)
 
 <!-- badges: end -->
 
-> Datos de opinón pública de Uruguay 1989 - 2020.
+> Datos de opinón pública de Uruguay de 1989 hasta la actualidad.
 
 ### Descripción
 
 Provee un conjunto de datos de opinión publica en Uruguay para el
-periodo que va desde 1989 hasta 2020 de dos indicadores relevante para
-el estudio de la realidad política del país: **intención de voto** y
-**evaluación de gestión del presidente**.
+periodo que va desde 1989 hasta la actualidad de dos indicadores
+relevante para el estudio de la realidad política del país: **intención
+de voto** y **evaluación de gestión del presidente**.
 
 El manual del paquete se puede encontrar
 [**aquí**](https://github.com/Nicolas-Schmidt/opuy/blob/master/man/figures/Manual_opuy.pdf).
@@ -46,14 +46,14 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 #### Funciones
 
 | Nombre         | Descripción                                                             |
-| -------------- | ----------------------------------------------------------------------- |
+|----------------|-------------------------------------------------------------------------|
 | `resumen_opuy` | Resumen de los indicadores que contiene la base de datos por consultora |
 
 #### Conjuntos de datos
 
-| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                     |
-| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevantes para trabajar con datos políticos para el período 1989 - 2020: **Intención de voto** y **Evaluación de la gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
+| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                                  |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: **Intención de voto** y **Evaluación de la gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
 
 #### Ejemplo
 
@@ -101,7 +101,9 @@ resumen_opuy()
 #> 2017       IV|EG       IV|EG       IV|EG        IV| -       IV|EG       IV| -
 #> 2018       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
 #> 2019       IV|EG       IV|EG       IV| -        - | -       IV|EG       IV| -
-#> 2020       - |EG       - |EG       - | -        - | -       - | -       - | -
+#> 2020       - |EG       - |EG       - | -        - | -       - |EG       - | -
+#> 2021       - |EG       - |EG       - |EG        - | -       - |EG       - | -
+#> 2022       - |EG       - |EG       - | -        - | -       - |EG       - | -
 #> 
 #> IV: Intencion de Voto
 #> EG: Evaluacion de gestion
@@ -144,14 +146,12 @@ opuy %>%
 
 ##### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
 
-    #> Warning: package 'magrittr' was built under R version 4.0.3
-
 | Partido          | Valor Mínimo | Valor Máximo | Valor Mínimo 2019 | Valor Máximo 2019 | Votación real |
-| :--------------- | :----------- | :----------- | :---------------- | :---------------- | :------------ |
+|:-----------------|:-------------|:-------------|:------------------|:------------------|:--------------|
 | Frente Amplio    | 24%          | 43%          | 27%               | 43%               | 39.25%        |
 | Partido Nacional | 21.6%        | 34%          | 21.6%             | 33%               | 28.79%        |
 | Partido Colorado | 3%           | 22%          | 9%                | 22%               | 12.41%        |
-| Cabildo Abierto  | 1%           | 12%          | 1%                | 12%               | 11.11%        |
+| Cabildo Abierto  | 1%           | 12%          | 1%                | 12%               | NA%           |
 
 #### Evaluación de la gestión del presidente
 
@@ -183,7 +183,11 @@ opuy %>%
 
 #### Citar
 
-Para citar el paquete `opuy` en publicaciones use:
+Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
+
+**Schmidt, Nicolás, Vairo, Daniela, Opertti, Martín , UMAD (2022) opuy:
+Datos de Opinión Pública de Uruguay 1989 a la actualidad, R package
+version 0.1.1001, <https://nicolas-schmidt.github.io/opuy/>.**
 
 ``` r
 citation(package = 'opuy')
@@ -192,15 +196,15 @@ citation(package = 'opuy')
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {opuy: Datos de Opinion Publica de Uruguay 1989 - 2020},
-#>     author = {Nicolas Schmidt and Daniela Vairo and Martín Opertti and {UMAD}},
+#>     title = {opuy: Datos de Opinion Publica de Uruguay desde 1989},
+#>     author = {Nicolas Schmidt and Daniela Vairo and Martin Opertti and {UMAD}},
 #>     year = {2020},
-#>     note = {R package version 0.1.1},
+#>     note = {R package version 0.1.1001},
 #>     url = {https://nicolas-schmidt.github.io/opuy/},
 #>   }
 ```
 
------
+------------------------------------------------------------------------
 
 ##### Mantenedor
 
@@ -208,7 +212,7 @@ Nicolás Schmidt (<nschmidt@cienciassociales.edu.uy>)
 
 #### Notas
 
------
+------------------------------------------------------------------------
 
 <sup><a id="fn.1" href="#fnr.1">1</a></sup> Unidad de Métodos y Acceso a
 Datos, Facultad de Ciencias Sociales, Universidad de la República

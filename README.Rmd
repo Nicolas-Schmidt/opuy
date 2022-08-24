@@ -30,11 +30,11 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 <!-- badges: end -->
 
 
-> Datos de opinón pública de Uruguay 1989 - 2020. 
+> Datos de opinón pública de Uruguay de 1989 hasta la actualidad. 
 
 ### Descripción 
 
-Provee un conjunto de datos de opinión publica en Uruguay para el periodo que va desde 1989 hasta 2020 de dos indicadores relevante para el estudio de la realidad política del país: __intención de voto__ y __evaluación de gestión del presidente__.
+Provee un conjunto de datos de opinión publica en Uruguay para el periodo que va desde 1989 hasta la actualidad de dos indicadores relevante para el estudio de la realidad política del país: __intención de voto__ y __evaluación de gestión del presidente__.
 
 El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-Schmidt/opuy/blob/master/man/figures/Manual_opuy.pdf).
 
@@ -62,7 +62,7 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 
 | Nombre |Descripción |
 | ----------------- | -------------------------------------------------------------- | 
-|`opuy`|Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 - 2020: __Intención de voto__ y __Evaluación de la gestión del Presidente__. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD).|
+|`opuy`|Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: __Intención de voto__ y __Evaluación de la gestión del Presidente__. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD).|
 
 
 
@@ -201,7 +201,11 @@ manual()
 
 #### Citar
 
-Para citar el paquete `opuy` en publicaciones use:
+Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
+
+**Schmidt, Nicolás, Vairo, Daniela, Opertti, Martín , UMAD (2022) opuy: Datos de Opinión Pública de Uruguay 1989 a la actualidad, R package version 0.1.1001, https://nicolas-schmidt.github.io/opuy/.**
+
+
 
 ```{r}
 citation(package = 'opuy')

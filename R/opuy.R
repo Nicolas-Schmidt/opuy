@@ -1,13 +1,13 @@
 #'opuy
 #'
 #' Contiene dos indicadores relevantes de opinión publica relativos a las
-#' elecciones en Uruguay para el periodo 1989 - 2020: intención de voto y evaluación
-#' de la gestión del presidente. Los datos son agregados y provienen de la divulgación
-#' de las empresas consultoras que realizan las encuestas.
+#' elecciones y al gobierno en Uruguay desde 1989 hasta la actualdiad: intención de voto y evaluación
+#' de la gestión del presidente. Los datos son agregados y provienen de la divulgación de los mismos por parte
+#' de las empresas consultoras de opinion publica que realizan las encuestas.
 #'
 #'  Los datos fueron obtenidos por UMAD en base a comunicaciones publicas
-#'  (medios de prensa fundamentalmente) de las distintas consultoras. La estructura, orden y
-#'  creacion de nuevas variables es desarrollo de los autores y de la UMAD.
+#'  (medios de prensa fundamentalmente) de las distintas consultoras. La estructura, orden, armonizacion y
+#'  creacion de nuevas variables es desarrollo de los autores del paquete.
 #'
 #'\describe{
 #'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: \emph{Intención de voto} y \emph{Evaluación de la gestión del Presidente}.}

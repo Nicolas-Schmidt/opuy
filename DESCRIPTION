@@ -1,7 +1,7 @@
 Package: opuy
 Type: Package
-Title: Datos de Opinion Publica de Uruguay 1989 - 2020
-Version: 0.1.1
+Title: Datos de Opinion Publica de Uruguay desde 1989 a la actualidad
+Version: 0.1.1001
 Author: Nicolas Schmidt [aut, cre], Daniela Vairo [aut], Martin Opertti [aut], Unidad de Metodos y Acceso a Datos (UMAD) [dtc]
 Authors@R: c(person(given = "Nicolas", 
                     family = "Schmidt", 
@@ -20,7 +20,7 @@ Authors@R: c(person(given = "Nicolas",
                     )
 Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>
 Description: Provee un conjunto de datos de opinion publica en Uruguay para el periodo que va desde 
-    1989 hasta 2020 de dos indicadores relevante para el estudio de la realidad politica del pais: Intencion de voto y 
+    1989 hasta la actualidad de dos indicadores relevante para el estudio de la realidad politica del pais: Intencion de voto y 
     Evaluacion de gestion del presidente.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -34,4 +34,4 @@ Imports:
     magrittr,
     purrr, 
     tidyr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
