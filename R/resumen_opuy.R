@@ -23,11 +23,10 @@ resumen_opuy <- function(){
         arrange(anio_medicion) %>%
         as.data.frame()
 
-    #op$anio_medicion[32] <- ".NA."  ## arreglar index
     rownames(op) <- op$anio_medicion
     op <- op[, -1]
     op[is.na(op)] <- "  - | -"
-    op <- rbind(paste(rep("-", 11), collapse = ""), op) #max(nchar(names(op))))
+    op <- rbind(paste(rep("-", 11), collapse = ""), op)
     rownames(op)[1] <- "----"
 
     cat("\n\n---- Resumen de Indicadores por anio y consultora ---------------------------\n\n\n")
