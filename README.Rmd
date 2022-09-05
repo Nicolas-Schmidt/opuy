@@ -55,7 +55,7 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 
 | Nombre |Descripción |
 | ----------------- | -------------------------------------------------------------- | 
-|`resumen_opuy`|Resumen de los indicadores que contiene la base de datos por consultora|
+|`resumen_opuy`|Resumen de los indicadores que contiene la base de datos por consultora y por año. Esta función  tiene asociado su propio método de `print()` y `summary()`. |
 
 
 #### Conjuntos de datos
@@ -68,18 +68,20 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 
 
 
-#### Ejemplo
+### Ejemplo
 
 ```{r}
 ## Conjunto de datos: 'opuy'
 
 library(opuy)
 
-resumen_opuy()
+summary(resumen_opuy())
+
+resumen_opuy(polling.org = c("Equipos", "Cifra", "Factum", "Opcion"))
 
 ```
 
-###### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
+#### Intención de voto para elecciones nacionales medidas en 2019 por todas las consultoras
 
 ```{r, echo = FALSE,  message = FALSE, warning = FALSE}
 library(extrafont)
@@ -106,7 +108,7 @@ opuy %>%
          color = "",
          title = "Intención de voto en elecciones nacionales 2019",
          subtitle = '27 de octubre de 2019 \nMediciones del año 2019',
-         caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
+         caption = 'Fuente: opuy (Schmidt et al. 2022)')
 
 
   
@@ -114,14 +116,14 @@ opuy %>%
 ```
 
 
-###### Intención de voto para elecciones nacionales de todas las consultoras para todo el período de medición de la elección de 2019 (2016 - 2019)
+#### Intención de voto para elecciones nacionales de todas las consultoras para todo el período de medición de la elección de 2019 (2016 - 2019)
 
 
 
 <img src='man/figures/iv2019.gif'/>
 
 
-##### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
+#### Resumen intención de voto 2019 de los principales partidos para toda la serie correspondiente a la elección nacional de 2019 (2016 - 2019)
 
 ```{r, echo = FALSE, message = FALSE}
 
@@ -176,7 +178,7 @@ opuy %>%
          color = "", 
          title = "Evaluacion de la gestión del presidente",
          subtitle = 'Serie histórica con datos de todas las consultoras (promedios anuales)',
-         caption = 'Fuente: Unidad de Métodos y Acceso a Datos (UMAD)')
+         caption = 'Fuente: opuy (Schmidt et al. 2022)')
 
 ```
 
@@ -199,7 +201,7 @@ manual()
 ```
 
 
-#### Citar
+#### :bookmark_tabs: Citar
 
 Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
 
