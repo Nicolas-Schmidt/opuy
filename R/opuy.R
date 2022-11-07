@@ -15,7 +15,7 @@
 #'    \item{tipo_eleccion}{Tipo de elección: \emph{Nacional}, \emph{Balotaje} o \emph{Internas}. Esta variable es útil para el indicador 'Intención de voto'.}
 #'    \item{anio_medicion}{Anio en el que se publicó la medición.}
 #'    \item{anio_gobierno}{Anio de gobierno. Esta variable es un número entero que va desde el 1 hasta el 5 indicando respectivamente el anio de gobierno (1 = primer anio de gobierno, 2 = segundo anio de gobierno...). Es particularmente útil para el indicador 'Evaluación de la gestión del Presidente'. Con esta variable es más simple realizar comparaciones entre Presidentes según anio de gobierno.}
-#'    \item{eleccion}{Esta variable refiere al anio de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
+#'    \item{eleccion}{Esta variable refiere al año de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
 #'    \item{fecha}{Fecha de cierre de campo declarado por la empresa consultora. En algunos casos es posible que la fecha sea la de publicación de la medición.}
 #'    \item{partido}{Nombre del partido político.}
 #'    \item{sigla}{Sigla del partido político.}
