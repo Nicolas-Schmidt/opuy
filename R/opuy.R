@@ -22,7 +22,7 @@
 #'    \item{candidato}{Nombre del candidato para el caso de la Intención de Voto en elecciones Internas y en Balotaje.}
 #'    \item{presidente}{Nombre del Presidente para la medición Evaluación de la gestión del Presidente.}
 #'    \item{categoria}{Categoría original de la medición para el caso de Evaluación de la gestión del Presidente. Esta variable comúnmente se mide en escala de Likert (e.g. Muy Mala, Mala, Regular, Buena, Muy buena)}
-#'    \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dió el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
+#'    \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dio el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
 #'    \item{valor}{Valor del indicador en porcentaje.}
 #' }
 #' @docType data
