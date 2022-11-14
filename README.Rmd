@@ -44,6 +44,7 @@ El manual del paquete se puede encontrar [__aquí__](https://github.com/Nicolas-
 ### Instalación
 
 ``` r
+## Versión en desarrollo
 remotes::install_github("Nicolas-Schmidt/opuy")
 ```
 
