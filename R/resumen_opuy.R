@@ -39,7 +39,7 @@ resumen_opuy <- function(year = allop(), polling.org = allc){
     op <- op[, -1]
     op[is.na(op)] <- "   -   |   -   "
     op <- rbind(paste(rep("-", 15), collapse = ""), op)
-    rownames(op)[1] <- "----"
+    rownames(op)[1] <- "-----"
 
     op <- op[c(1, which(rownames(op) %in% year)), names(op) %in% polling.org, drop = FALSE]
     class(op) <- c("opuy", class(op))
