@@ -14,6 +14,7 @@ opuy <- readxl::read_excel("data-raw/opuy.xlsx",
 str(opuy)
 opuy$fecha <- janitor::excel_numeric_to_date(opuy$fecha)
 opuy <- dplyr::arrange(opuy, medicion, empresa, fecha)
+
 rio::export(opuy, 'opuy.rda')
 load('opuy.rda')
 opuy <- tibble::as_tibble(opuy)
