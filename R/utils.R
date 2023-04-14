@@ -4,7 +4,6 @@
 #' @importFrom utils de
 
 
-
 base <- function(){
     opuy %>%
     select(anio_medicion, empresa, medicion, fecha) %>%
