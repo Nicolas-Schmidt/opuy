@@ -1,7 +1,7 @@
 #' @importFrom dplyr filter select group_by mutate arrange ungroup distinct summarise n
 #' @importFrom tidyr pivot_wider
 #' @importFrom magrittr %>%
-#' @importFrom utils de
+#' @importFrom utils
 
 
 base <- function(){

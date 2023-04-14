@@ -62,37 +62,50 @@ Metodo print de de la funcion resumen_opuy"><!-- mathjax --><script src="https:/
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fu">allop</span><span class="op">(</span><span class="op">)</span>, polling.org <span class="op">=</span> <span class="va">allc</span><span class="op">)</span>
-
-<span class="co"># S3 method for opuy</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for opuy</span>
-<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fu">allop</span><span class="op">(</span><span class="op">)</span>, polling.org <span class="op">=</span> <span class="va">allc</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for opuy</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for opuy</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>year</dt>
 <dd><p>anio de medicion</p></dd>
+
+
 <dt>polling.org</dt>
 <dd><p>empresa consultora: "Equipos", "Cifra", "Factum", "Interconsult", "Radar" y "Opcion".</p></dd>
+
+
 <dt>object</dt>
 <dd><p>objeto de la clase <code>opuy</code> de la funcion <code>resumen_opuy</code></p></dd>
+
+
 <dt>...</dt>
 <dd><p>parametros adicionales</p></dd>
+
+
 <dt>x</dt>
 <dd><p>objeto de la clase <code>opuy</code> de la funcion <code>resumen_opuy</code></p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>data.frame que contiene los indicadores que cada consultora realizó por anio.
-data.frame</p>
+    
+
+<p>data.frame que contiene los indicadores que cada consultora realizó por anio.</p>
+
+
+<p>data.frame</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">resumen_opuy</span><span class="op">(</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">resumen_opuy</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---- Resumen de Indicadores por anio y consultora ---------------------------</span>
@@ -133,7 +146,8 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2019  IV (11)|EG (01) IV (08)|EG (02) IV (10)|           -   |   -   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2020         |EG (07)        |EG (03)    -   |   -       -   |   -   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2021         |EG (12)        |EG (05)        |EG (02)    -   |   -   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2022         |EG (07)        |EG (04)    -   |   -       -   |   -   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2022         |EG (09)        |EG (04)    -   |   -       -   |   -   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2023     -   |   -           |EG (01)    -   |   -       -   |   -   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            Radar          Opcion     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ----- --------------- ---------------</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1989     -   |   -       -   |   -   </span>
@@ -169,7 +183,8 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2019  IV (16)|        IV (11)|EG (03)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2020     -   |   -           |EG (02)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2021     -   |   -           |EG (04)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2022     -   |   -           |EG (03)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2022     -   |   -           |EG (04)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2023     -   |   -           |EG (01)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> IV: Intencion de Voto</span>
@@ -178,7 +193,7 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Entre parentesis se indica la cantidad de mediciones.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -----------------------------------------------------------------------------</span>
-<span class="r-in"><span class="fu">resumen_opuy</span><span class="op">(</span><span class="fl">1995</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">resumen_opuy</span><span class="op">(</span><span class="fl">1995</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---- Resumen de Indicadores por anio y consultora ---------------------------</span>
@@ -198,7 +213,7 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Entre parentesis se indica la cantidad de mediciones.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -----------------------------------------------------------------------------</span>
-<span class="r-in"><span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">1992</span><span class="op">:</span><span class="fl">1998</span>, polling.org <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Equipos"</span>, <span class="st">"Cifra"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">1992</span><span class="op">:</span><span class="fl">1998</span>, polling.org <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Equipos"</span>, <span class="st">"Cifra"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---- Resumen de Indicadores por anio y consultora ---------------------------</span>
@@ -221,9 +236,9 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Entre parentesis se indica la cantidad de mediciones.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -----------------------------------------------------------------------------</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">foo</span> <span class="op">&lt;-</span> <span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">1992</span><span class="op">:</span><span class="fl">1998</span>, polling.org <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Equipos"</span>, <span class="st">"Cifra"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">foo</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">foo</span> <span class="op">&lt;-</span> <span class="fu">resumen_opuy</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">1992</span><span class="op">:</span><span class="fl">1998</span>, polling.org <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Equipos"</span>, <span class="st">"Cifra"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">foo</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---- Resumen de Indicadores por anio y consultora ---------------------------</span>
@@ -246,8 +261,8 @@ data.frame</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Entre parentesis se indica la cantidad de mediciones.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -----------------------------------------------------------------------------</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">foo</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3 x 6</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">foo</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3 × 6</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Empresa Indicador                        Mediciones Periodo   Anios Ratio</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                 <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Equipos Evaluacion de gestion presidente         65 1992-1998     6    11</span>
@@ -267,8 +282,7 @@ data.frame</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
-2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

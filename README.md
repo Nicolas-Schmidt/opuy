@@ -20,6 +20,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/253661638.svg)](https://zenodo.org/badge/latestdoi/253661638)
 
+[![R-CMD-check](https://github.com/Nicolas-Schmidt/opuy/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/opuy/actions)
 <!-- badges: end -->
 
 > Datos de opinón pública de Uruguay de 1989 hasta la actualidad.
@@ -37,7 +38,6 @@ El manual del paquete se puede encontrar
 ### Instalación
 
 ``` r
-## Versión en desarrollo
 remotes::install_github("Nicolas-Schmidt/opuy")
 ```
 
@@ -63,21 +63,21 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 library(opuy)
 
 summary(resumen_opuy())
-#> # A tibble: 12 x 6
+#> # A tibble: 12 × 6
 #>    Empresa      Indicador                        Mediciones Periodo  Anios Ratio
 #>    <chr>        <chr>                                 <int> <chr>    <dbl> <dbl>
-#>  1 Equipos      Evaluacion de gestion presidente        188 1990-20~    32     6
-#>  2 Cifra        Evaluacion de gestion presidente         51 2000-20~    22     2
-#>  3 Opcion       Evaluacion de gestion presidente         28 2014-20~     8     4
-#>  4 Factum       Evaluacion de gestion presidente         27 2000-20~    21     1
-#>  5 Interconsult Evaluacion de gestion presidente         15 2005-20~     5     3
-#>  6 Radar        Evaluacion de gestion presidente          3 2005-20~     7     0
-#>  7 Factum       Intencion de voto                       149 1993-20~    26     6
-#>  8 Equipos      Intencion de voto                       114 1989-20~    30     4
-#>  9 Cifra        Intencion de voto                        90 1993-20~    26     3
-#> 10 Radar        Intencion de voto                        69 1998-20~    21     3
-#> 11 Interconsult Intencion de voto                        64 1998-20~    19     3
-#> 12 Opcion       Intencion de voto                        29 2014-20~     5     6
+#>  1 Equipos      Evaluacion de gestion presidente        190 1990-20…    32     6
+#>  2 Cifra        Evaluacion de gestion presidente         52 2000-20…    23     2
+#>  3 Opcion       Evaluacion de gestion presidente         30 2014-20…     9     3
+#>  4 Factum       Evaluacion de gestion presidente         27 2000-20…    21     1
+#>  5 Interconsult Evaluacion de gestion presidente         15 2005-20…     5     3
+#>  6 Radar        Evaluacion de gestion presidente          3 2005-20…     7     0
+#>  7 Factum       Intencion de voto                       149 1993-20…    26     6
+#>  8 Equipos      Intencion de voto                       114 1989-20…    30     4
+#>  9 Cifra        Intencion de voto                        90 1993-20…    26     3
+#> 10 Radar        Intencion de voto                        69 1998-20…    21     3
+#> 11 Interconsult Intencion de voto                        64 1998-20…    19     3
+#> 12 Opcion       Intencion de voto                        29 2014-20…     5     6
 
 resumen_opuy(polling.org = c("Equipos", "Cifra", "Factum", "Opcion"))
 #> 
@@ -120,7 +120,8 @@ resumen_opuy(polling.org = c("Equipos", "Cifra", "Factum", "Opcion"))
 #> 2019  IV (11)|EG (01) IV (08)|EG (02) IV (10)|        IV (11)|EG (03)
 #> 2020         |EG (07)        |EG (03)    -   |   -           |EG (02)
 #> 2021         |EG (12)        |EG (05)        |EG (02)        |EG (04)
-#> 2022         |EG (07)        |EG (04)    -   |   -           |EG (03)
+#> 2022         |EG (09)        |EG (04)    -   |   -           |EG (04)
+#> 2023     -   |   -           |EG (01)    -   |   -           |EG (01)
 #> 
 #> 
 #> IV: Intencion de Voto
@@ -211,6 +212,8 @@ version 0.1.1001, <https://nicolas-schmidt.github.io/opuy/>.**
 
 ``` r
 citation(package = 'opuy')
+#> 
+#> To cite package 'opuy' in publications use:
 #> 
 #> 
 #> A BibTeX entry for LaTeX users is

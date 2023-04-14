@@ -5,7 +5,7 @@
 \alias{opuy}
 \title{opuy}
 \format{
-data.frame con 4971 filas y 14 columnas
+data.frame con 4990 filas y 14 columnas
 }
 \usage{
 data(opuy)
@@ -27,14 +27,14 @@ Los datos fueron obtenidos por UMAD en base a comunicaciones publicas
    \item{tipo_eleccion}{Tipo de elección: \emph{Nacional}, \emph{Balotaje} o \emph{Internas}. Esta variable es útil para el indicador 'Intención de voto'.}
    \item{anio_medicion}{Anio en el que se publicó la medición.}
    \item{anio_gobierno}{Anio de gobierno. Esta variable es un número entero que va desde el 1 hasta el 5 indicando respectivamente el anio de gobierno (1 = primer anio de gobierno, 2 = segundo anio de gobierno...). Es particularmente útil para el indicador 'Evaluación de la gestión del Presidente'. Con esta variable es más simple realizar comparaciones entre Presidentes según anio de gobierno.}
-   \item{eleccion}{Esta variable refiere al anio de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
+   \item{eleccion}{Esta variable refiere al año de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
    \item{fecha}{Fecha de cierre de campo declarado por la empresa consultora. En algunos casos es posible que la fecha sea la de publicación de la medición.}
    \item{partido}{Nombre del partido político.}
    \item{sigla}{Sigla del partido político.}
    \item{candidato}{Nombre del candidato para el caso de la Intención de Voto en elecciones Internas y en Balotaje.}
    \item{presidente}{Nombre del Presidente para la medición Evaluación de la gestión del Presidente.}
    \item{categoria}{Categoría original de la medición para el caso de Evaluación de la gestión del Presidente. Esta variable comúnmente se mide en escala de Likert (e.g. Muy Mala, Mala, Regular, Buena, Muy buena)}
-   \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dió el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
+   \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dio el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
    \item{valor}{Valor del indicador en porcentaje.}
 }
 }
