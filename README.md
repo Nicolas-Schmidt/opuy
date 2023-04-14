@@ -20,7 +20,6 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/253661638.svg)](https://zenodo.org/badge/latestdoi/253661638)
 
-[![R-CMD-check](https://github.com/Nicolas-Schmidt/opuy/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/opuy/actions)
 <!-- badges: end -->
 
 > Datos de opinón pública de Uruguay de 1989 hasta la actualidad.
