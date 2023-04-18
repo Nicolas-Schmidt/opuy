@@ -7,8 +7,10 @@
 base <- function(){
     opuy %>%
     select(anio_medicion, empresa, medicion, fecha) %>%
+    #select(anio_medicion, empresa, medicion, fecha, tipo_eleccion) %>%
     distinct() %>%
     group_by(anio_medicion, empresa, medicion) %>%
+    #group_by(anio_medicion, empresa, medicion, tipo_eleccion) %>%
     summarise(mediciones = n()) %>%
     ungroup()
 }

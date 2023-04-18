@@ -62,13 +62,14 @@ summary.opuy <- function(object, ...){
     b  <- base()
     b  <- b[which(b$anio_medicion %in% a1), ]
     b  <- b[which(b$empresa %in% a2), ]
+    #b$tipo_eleccion <- ifelse(is.na(b$tipo_eleccion), "--", paste0("   ", b$tipo_eleccion))
 
     b <- b %>%
-    group_by(empresa, medicion) %>%
+    group_by(empresa, medicion) %>%#, tipo_eleccion
     summarise(
         Mediciones = sum(mediciones),
         Periodo    = paste0(min(anio_medicion), "-",max(anio_medicion)),
-        Anios      = ifelse((max(anio_medicion) - min(anio_medicion))==0, 1, (max(anio_medicion) - min(anio_medicion))),
+        Anios      = ifelse((max(anio_medicion) - min(anio_medicion)) == 0, 1, (max(anio_medicion) - min(anio_medicion))),
         Ratio      = round(Mediciones / Anios)
     ) %>%
     arrange(medicion, -Mediciones) %>%

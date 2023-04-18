@@ -215,7 +215,8 @@ elección.
 
 #### :bookmark_tabs: Citar
 
-Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
+Para citar el uso de los datos o del paquete `opuy` en publicaciones
+use:
 
 **Schmidt, Nicolás, Vairo, Daniela, Opertti, Martín , UMAD (2022) opuy:
 Datos de Opinión Pública de Uruguay 1989 a la actualidad, R package
