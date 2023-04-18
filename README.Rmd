@@ -62,7 +62,7 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 
 | Nombre |Descripción |
 | ----------------- | -------------------------------------------------------------- | 
-|`opuy`|Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: __Intención de voto__ y __Evaluación de la gestión del Presidente__. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD).|
+|`opuy`|Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: __Intención de voto__ y __Evaluación de la gestión del Presidente__. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos.|
 
 
 
@@ -182,8 +182,15 @@ opuy %>%
 
 ```
 
+#### Uso combinado del paquete `opuy` con [`Boreluy`](https://nicolas-schmidt.github.io/Boreluy/) (paquete de R de datos electorales de Uruguay)
 
 
+La paleta grafica que se presenta contiene los datos de cuatro consultores sobre intención de voto de cara a la elección de octubre de 2019. La recta y el punto rojo indica el resultado que cada partido obtuvo en la elección. La franja roja horizontal se conforma con los puntos de la última intención de voto de cada consultora y el resultado de la elección. El número rojo arriba a la izquierda de cada grafico indica le distancia de la última estimación con el resultado de la elección.
+
+```{r, fig.width=12, fig.height=10, message = FALSE, warning=FALSE, echo=FALSE}
+source("data-raw/test.R")
+
+```
 
 ```{r, echo = FALSE, message = FALSE, eval = F}
 manual <- function(){
@@ -209,9 +216,6 @@ Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
 
 
 
-```{r}
-citation(package = 'opuy')
-```
 
 
 

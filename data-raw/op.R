@@ -7,8 +7,8 @@ library(opuy)
 library(hrbrthemes)
 library(extrafont)
 
-#font_import()
-#loadfonts(device = "win")
+font_import()
+loadfonts(device = "win")
 
 una <- opuy %>%
     filter(medicion == 'Intencion de voto',

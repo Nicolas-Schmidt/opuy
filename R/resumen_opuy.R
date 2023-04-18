@@ -25,15 +25,14 @@ resumen_opuy <- function(year = allop(), polling.org = allc){
     mutate(
         `Intencion de voto` = ifelse(nchar(`Intencion de voto`) == 1, paste0(0, `Intencion de voto`), `Intencion de voto`),
         `Evaluacion de gestion presidente` = ifelse(nchar(`Evaluacion de gestion presidente`) == 1, paste0(0, `Evaluacion de gestion presidente`), `Evaluacion de gestion presidente`),
-        iv = ifelse(is.na(`Intencion de voto`), "       |",paste0("IV (", `Intencion de voto`, ")|")),
-        eg = ifelse(is.na(`Evaluacion de gestion presidente`), "       ",paste0("EG (", `Evaluacion de gestion presidente`, ")")),
+        iv = ifelse(is.na(`Intencion de voto`), "   -   |",paste0("IV (", `Intencion de voto`, ")|")),
+        eg = ifelse(is.na(`Evaluacion de gestion presidente`), "   -   ",paste0("EG (", `Evaluacion de gestion presidente`, ")")),
         indicador = paste0(iv, eg)
     ) %>%
     select(anio_medicion, empresa, indicador) %>%
     pivot_wider(., names_from = empresa, values_from = indicador) %>%
     arrange(anio_medicion) %>%
     as.data.frame()
-
 
     rownames(op) <- op$anio_medicion
     op <- op[, -1]

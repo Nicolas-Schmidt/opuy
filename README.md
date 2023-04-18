@@ -49,9 +49,9 @@ remotes::install_github("Nicolas-Schmidt/opuy")
 
 #### Conjuntos de datos
 
-| Nombre | Descripción                                                                                                                                                                                                                                                                                                                                                                                                  |
-|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: **Intención de voto** y **Evaluación de la gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. La fuente de los datos es el Banco de Datos de la Faculta de Ciencias Sociales (UMAD). |
+| Nombre | Descripción                                                                                                                                                                                                                                                                                                           |
+|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `opuy` | Conjunto de datos que contiene dos indicadores de opinión pública relevante para trabajar con datos políticos para el período 1989 hasta la actualdiad: **Intención de voto** y **Evaluación de la gestión del Presidente**. Los valores para ambos indicadores son agregados ya que no se cuenta con los microdatos. |
 
 ### Ejemplo
 
@@ -85,41 +85,41 @@ resumen_opuy(polling.org = c("Equipos", "Cifra", "Factum", "Opcion"))
 #> 
 #>           Equipos          Cifra          Factum          Opcion     
 #> ----- --------------- --------------- --------------- ---------------
-#> 1989  IV (06)|           -   |   -       -   |   -       -   |   -   
+#> 1989  IV (06)|   -       -   |   -       -   |   -       -   |   -   
 #> 1990  IV (01)|EG (02)    -   |   -       -   |   -       -   |   -   
 #> 1991  IV (02)|EG (02)    -   |   -       -   |   -       -   |   -   
 #> 1992  IV (02)|EG (03)    -   |   -       -   |   -       -   |   -   
-#> 1993  IV (06)|EG (06) IV (08)|        IV (03)|           -   |   -   
-#> 1994  IV (11)|EG (12) IV (11)|        IV (12)|           -   |   -   
-#> 1995         |EG (08)    -   |   -    IV (01)|           -   |   -   
-#> 1996         |EG (12)    -   |   -    IV (03)|           -   |   -   
-#> 1997  IV (01)|EG (12)    -   |   -    IV (08)|           -   |   -   
-#> 1998  IV (01)|EG (12)    -   |   -    IV (13)|           -   |   -   
-#> 1999  IV (09)|EG (06) IV (07)|        IV (16)|           -   |   -   
-#> 2000         |EG (03)        |EG (02) IV (01)|EG (07)    -   |   -   
-#> 2001         |EG (04)    -   |   -    IV (03)|EG (07)    -   |   -   
+#> 1993  IV (06)|EG (06) IV (08)|   -    IV (03)|   -       -   |   -   
+#> 1994  IV (11)|EG (12) IV (11)|   -    IV (12)|   -       -   |   -   
+#> 1995     -   |EG (08)    -   |   -    IV (01)|   -       -   |   -   
+#> 1996     -   |EG (12)    -   |   -    IV (03)|   -       -   |   -   
+#> 1997  IV (01)|EG (12)    -   |   -    IV (08)|   -       -   |   -   
+#> 1998  IV (01)|EG (12)    -   |   -    IV (13)|   -       -   |   -   
+#> 1999  IV (09)|EG (06) IV (07)|   -    IV (16)|   -       -   |   -   
+#> 2000     -   |EG (03)    -   |EG (02) IV (01)|EG (07)    -   |   -   
+#> 2001     -   |EG (04)    -   |   -    IV (03)|EG (07)    -   |   -   
 #> 2002  IV (01)|EG (04)    -   |   -    IV (03)|EG (01)    -   |   -   
-#> 2003         |EG (04) IV (03)|        IV (03)|           -   |   -   
-#> 2004  IV (07)|EG (04) IV (10)|        IV (15)|           -   |   -   
-#> 2005         |EG (05)        |EG (02)    -   |   -       -   |   -   
-#> 2006         |EG (06)    -   |   -           |EG (02)    -   |   -   
-#> 2007         |EG (06)    -   |   -    IV (02)|           -   |   -   
-#> 2008  IV (01)|EG (06) IV (03)|EG (01) IV (04)|           -   |   -   
-#> 2009  IV (10)|EG (05) IV (11)|        IV (11)|           -   |   -   
-#> 2010  IV (03)|EG (06)        |EG (02) IV (02)|EG (01)    -   |   -   
-#> 2011  IV (06)|EG (02) IV (01)|EG (04) IV (04)|           -   |   -   
-#> 2012  IV (03)|EG (04) IV (04)|EG (06) IV (04)|           -   |   -   
-#> 2013  IV (02)|EG (04) IV (06)|EG (03) IV (05)|           -   |   -   
-#> 2014  IV (11)|EG (05) IV (10)|EG (05) IV (14)|        IV (06)|EG (02)
-#> 2015  IV (03)|EG (06)        |EG (02)        |EG (03)        |EG (01)
+#> 2003     -   |EG (04) IV (03)|   -    IV (03)|   -       -   |   -   
+#> 2004  IV (07)|EG (04) IV (10)|   -    IV (15)|   -       -   |   -   
+#> 2005     -   |EG (05)    -   |EG (02)    -   |   -       -   |   -   
+#> 2006     -   |EG (06)    -   |   -       -   |EG (02)    -   |   -   
+#> 2007     -   |EG (06)    -   |   -    IV (02)|   -       -   |   -   
+#> 2008  IV (01)|EG (06) IV (03)|EG (01) IV (04)|   -       -   |   -   
+#> 2009  IV (10)|EG (05) IV (11)|   -    IV (11)|   -       -   |   -   
+#> 2010  IV (03)|EG (06)    -   |EG (02) IV (02)|EG (01)    -   |   -   
+#> 2011  IV (06)|EG (02) IV (01)|EG (04) IV (04)|   -       -   |   -   
+#> 2012  IV (03)|EG (04) IV (04)|EG (06) IV (04)|   -       -   |   -   
+#> 2013  IV (02)|EG (04) IV (06)|EG (03) IV (05)|   -       -   |   -   
+#> 2014  IV (11)|EG (05) IV (10)|EG (05) IV (14)|   -    IV (06)|EG (02)
+#> 2015  IV (03)|EG (06)    -   |EG (02)    -   |EG (03)    -   |EG (01)
 #> 2016  IV (05)|EG (05) IV (01)|EG (03) IV (04)|EG (03) IV (03)|EG (05)
 #> 2017  IV (06)|EG (03) IV (03)|EG (03) IV (04)|EG (01) IV (05)|EG (04)
-#> 2018  IV (06)|EG (04) IV (04)|EG (04) IV (04)|        IV (04)|EG (04)
-#> 2019  IV (11)|EG (01) IV (08)|EG (02) IV (10)|        IV (11)|EG (03)
-#> 2020         |EG (07)        |EG (03)    -   |   -           |EG (02)
-#> 2021         |EG (12)        |EG (05)        |EG (02)        |EG (04)
-#> 2022         |EG (09)        |EG (04)    -   |   -           |EG (04)
-#> 2023     -   |   -           |EG (01)    -   |   -           |EG (01)
+#> 2018  IV (06)|EG (04) IV (04)|EG (04) IV (04)|   -    IV (04)|EG (04)
+#> 2019  IV (11)|EG (01) IV (08)|EG (02) IV (10)|   -    IV (11)|EG (03)
+#> 2020     -   |EG (07)    -   |EG (03)    -   |   -       -   |EG (02)
+#> 2021     -   |EG (12)    -   |EG (05)    -   |EG (02)    -   |EG (04)
+#> 2022     -   |EG (09)    -   |EG (04)    -   |   -       -   |EG (04)
+#> 2023     -   |   -       -   |EG (01)    -   |   -       -   |EG (01)
 #> 
 #> 
 #> IV: Intencion de Voto
@@ -200,6 +200,19 @@ opuy %>%
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
+#### Uso combinado del paquete `opuy` con [`Boreluy`](https://nicolas-schmidt.github.io/Boreluy/) (paquete de R de datos electorales de Uruguay)
+
+La paleta grafica que se presenta contiene los datos de cuatro
+consultores sobre intención de voto de cara a la elección de octubre de
+2019. La recta y el punto rojo indica el resultado que cada partido
+obtuvo en la elección. La franja roja horizontal se conforma con los
+puntos de la última intención de voto de cada consultora y el resultado
+de la elección. El número rojo arriba a la izquierda de cada grafico
+indica le distancia de la última estimación con el resultado de la
+elección.
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
 #### :bookmark_tabs: Citar
 
 Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
@@ -207,23 +220,6 @@ Para citar el paquete `opuy` o el uso de los datos en publicaciones use:
 **Schmidt, Nicolás, Vairo, Daniela, Opertti, Martín , UMAD (2022) opuy:
 Datos de Opinión Pública de Uruguay 1989 a la actualidad, R package
 version 0.1.1001, <https://nicolas-schmidt.github.io/opuy/>.**
-
-``` r
-citation(package = 'opuy')
-#> 
-#> To cite package 'opuy' in publications use:
-#> 
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Manual{,
-#>     title = {opuy: Datos de Opinion Publica de Uruguay desde 1989},
-#>     author = {Nicolas Schmidt and Daniela Vairo and Martin Opertti and {UMAD}},
-#>     year = {2022},
-#>     note = {R package version 0.1.1001},
-#>     url = {https://nicolas-schmidt.github.io/opuy/},
-#>   }
-```
 
 ------------------------------------------------------------------------
 
