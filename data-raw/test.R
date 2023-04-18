@@ -28,7 +28,8 @@ op$epa <- paste(op$empresa, op$partido)
 distancia <- do.call("rbind", lapply(split(op, op$epa), function(x){return(x[nrow(x),])})) %>%
     select(empresa, partido, valor) %>%
     full_join(., e192 %>% select(-fecha)) %>%
-    mutate(dist = valor - resultado)
+    mutate(dist = valor - resultado,
+           fecha = as.Date("2019-11-30"))
 
 
 ## c("Frente Amplio", "Partido Nacional", "Partido Colorado")
@@ -47,7 +48,7 @@ ggplot(op, aes(x = fecha, y = valor)) +
                      xend = fecha,
                      yend = resultado),
                  data = e192, size = 0.8, color = "red") +
-    geom_rect(data = margen, aes(xmin = as.Date("2015-08-01"),
+    geom_rect(data = distancia, aes(xmin = as.Date("2015-08-01"),
                                  xmax = as.Date("2019-11-30"),
                                  ymin = valor,
                                  ymax = resultado),
