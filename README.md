@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# op<b style='color:blue'>uy</b>
+# op<b style='color:blue'>uy</b> <img src='man/figures/logo.png' align="right" height="180" />
 
 *Nicolás Schmidt, Daniela Vairo, Martín Opertti,
 UMAD<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.*
