@@ -29,5 +29,5 @@
 #' @keywords datasets
 #' @name opuy
 #' @usage data(opuy)
-#' @format data.frame con 4994 filas y 14 columnas
+#' @format data.frame con 5113 filas y 14 columnas
 'opuy'

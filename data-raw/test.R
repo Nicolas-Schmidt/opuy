@@ -36,7 +36,7 @@ ggplot(op, aes(x = fecha, y = valor)) +
     facet_grid(rows = vars(empresa),
                cols = vars(partido)) +
     geom_segment(aes(x = fecha,
-                     y = 5,
+                     y = 0,
                      xend = fecha,
                      yend = resultado),
                  data = e192,
