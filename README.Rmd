@@ -125,7 +125,7 @@ opuy %>%
          caption = 'Fuente: opuy (Schmidt et al. 2022)'
          ) +
     geom_text(data=annotation, aes( x=x, y=y, label=label),
-              color="black", size=5) +
+              color="black", size=4) +
     scale_fill_manual(name = "", values = colores) +
     scale_color_manual(name = "", values = colores) +
     scale_x_date(date_breaks = "2 years", date_minor_breaks = "1 year",
