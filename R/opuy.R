@@ -1,33 +1,34 @@
 #'opuy
 #'
-#' Contiene dos indicadores relevantes de opinión publica relativos a las
-#' elecciones y al gobierno en Uruguay desde 1989 hasta la actualdiad: intención de voto y evaluación
-#' de la gestión del presidente. Los datos son agregados y provienen de la divulgación de los mismos por parte
-#' de las empresas consultoras de opinion publica que realizan las encuestas.
+#' The datset that contains two public opinion indicators: vote intention and
+#' presidential approval. Data available ranges from 1989 to the present. Data
+#'  was collected from polling organizations records and news articles by
+#'  Unidad de Métodos y Acceso a Datos. All data is at the aggregate level,
+#'  as no individual-level data is available.
 #'
-#'  Los datos fueron obtenidos por UMAD en base a comunicaciones publicas
-#'  (medios de prensa fundamentalmente) de las distintas consultoras. La estructura, orden, armonizacion y
-#'  creacion de nuevas variables es desarrollo de los autores del paquete.
+#' Data were collected by UMAD from polling organization records and news
+#' articles. The structure, order, harmonization and creation of new variables
+#' was done by the package authors.
 #'
 #'\describe{
-#'    \item{medicion}{Indicador disponible. Hasta el momento solo hay dos: \emph{Intención de voto} y \emph{Evaluación de la gestión del Presidente}.}
-#'    \item{empresa}{Nombre de la empresa consultora que realizó la medición.}
-#'    \item{tipo_eleccion}{Tipo de elección: \emph{Nacional}, \emph{Balotaje} o \emph{Internas}. Esta variable es útil para el indicador 'Intención de voto'.}
-#'    \item{anio_medicion}{Anio en el que se publicó la medición.}
-#'    \item{anio_gobierno}{Anio de gobierno. Esta variable es un número entero que va desde el 1 hasta el 5 indicando respectivamente el anio de gobierno (1 = primer anio de gobierno, 2 = segundo anio de gobierno...). Es particularmente útil para el indicador 'Evaluación de la gestión del Presidente'. Con esta variable es más simple realizar comparaciones entre Presidentes según anio de gobierno.}
-#'    \item{eleccion}{Esta variable refiere al año de la elección a la que está asociada la medición. Por ejemplo, se puede tener una medición de Intención de voto del anio 2017, y esta corresponde a la eleccion de 2019.}
-#'    \item{fecha}{Fecha de cierre de campo declarado por la empresa consultora. En algunos casos es posible que la fecha sea la de publicación de la medición.}
-#'    \item{partido}{Nombre del partido político.}
-#'    \item{sigla}{Sigla del partido político.}
-#'    \item{candidato}{Nombre del candidato para el caso de la Intención de Voto en elecciones Internas y en Balotaje.}
-#'    \item{presidente}{Nombre del Presidente para la medición Evaluación de la gestión del Presidente.}
-#'    \item{categoria}{Categoría original de la medición para el caso de Evaluación de la gestión del Presidente. Esta variable comúnmente se mide en escala de Likert (e.g. Muy Mala, Mala, Regular, Buena, Muy buena)}
-#'    \item{categoria_unificada}{Se armoniza la variable 'categoria' para poder comparar entre empresas consultoras. Los encuestados que no respondieron o que respondieron que no saben se les dio el valor de 0, los que desaprueban asumen el valor de 1, los que son indiferentes el valor de 2 y con el valor de 3 son los encuestados que respondieron que aprobaban la gestión del Presidente.}
-#'    \item{valor}{Valor del indicador en porcentaje.}
+#'    \item{medicion}{Indicator name. For now there are two available: \emph{Intención de voto} (vote intention) and \emph{Evaluación de la gestión del Presidente} (presidential approval).}
+#'    \item{empresa}{Polling organization}
+#'    \item{tipo_eleccion}{Election type: \emph{Nacional}, \emph{Balotaje} o \emph{Internas}. Election associated with vote intention data.}
+#'    \item{anio_medicion}{Measurement year}
+#'    \item{anio_gobierno}{Administration year. This variable is an integer that goes from 1 to 5, indicating the year of the administration (1 = administration's first year, 2 = administration's second year...). Is useful for the 'Evaluación de la gestión del Presidente' indicator to make valid comparissons between presidents at the same period of the administration.}
+#'    \item{eleccion}{Election associated with the vote intention measure. For example, there could be vote intention data available for the year 2017 which is associated with the 2019 election.}
+#'    \item{fecha}{Last day of survey field dates. In some cases, where this data is not available, it could be date of publication instead}
+#'    \item{partido}{Political party name.}
+#'    \item{sigla}{Political party abbreviation}
+#'    \item{candidato}{Name of the candidate for primary and 'balotaje' elections.}
+#'    \item{presidente}{President's name for presidential approval data.}
+#'    \item{categoria}{Original response category for presidential approval data. This variable is usually a Likert scale.
+#'    \item{categoria_unificada}{Harmonized value for the response category of presidential approval to make comparissons between polling organizations. Respondents that did not answer or were not sure were given the value 0, those who disapprove the president's job are given the value of 1, neutral evaluations are given the value of 2 and those who approve the president's job are given the value of 3.}
+#'    \item{valor}{Measurement value in procentage.}
 #' }
 #' @docType data
 #' @keywords datasets
 #' @name opuy
 #' @usage data(opuy)
-#' @format data.frame con 5113 filas y 14 columnas
+#' @format data.frame with 5113 rows and 14 columns
 'opuy'

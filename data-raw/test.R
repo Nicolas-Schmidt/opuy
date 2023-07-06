@@ -89,6 +89,3 @@ ggplot(op, aes(x = fecha, y = valor)) +
 
 
 print(gop)
-
-
-

@@ -1,10 +1,9 @@
 
-#' @title resumen opuy
-#' @description Resumen de los indicadores que contiene la base de datos por consultora.
-#'     Permite consultar todos los indicadores disponibles por consultora por anio.
-#' @param year anio de medicion
-#' @param polling.org empresa consultora: "Equipos", "Cifra", "Factum", "Interconsult", "Radar" y "Opcion".
-#' @return data.frame que contiene los indicadores que cada consultora realizó por anio.
+#' @title opuy summary
+#' @description A summary of the number of measurements by indicators and year that the dataset contains.
+#' @param year measurement year
+#' @param polling.org polling organization: "Equipos", "Cifra", "Factum", "Interconsult", "Radar" and "Opcion".
+#' @return data.frame that contains the measurements each polling organization made per year.
 #' @examples
 #' resumen_opuy()
 #' resumen_opuy(1995)
@@ -14,8 +13,6 @@
 #' print(foo)
 #' summary(foo)
 #' @export
-
-
 
 resumen_opuy <- function(year = allop(), polling.org = allc){
 
@@ -47,9 +44,9 @@ resumen_opuy <- function(year = allop(), polling.org = allc){
 }
 
 #' @title summary.opuy
-#' @description Ofrece un resumen por consultora e Indicador.
-#' @param object objeto de la clase \code{opuy} de la funcion \code{\link{resumen_opuy}}
-#' @param ... parametros adicionales
+#' @description Returns a summary by polling organization and indicator.
+#' @param object object of class \code{opuy} from \code{\link{resumen_opuy}} function
+#' @param ... additional arguments
 #' @return data.frame
 #' @rdname resumen_opuy
 #' @export
@@ -80,9 +77,9 @@ summary.opuy <- function(object, ...){
 
 
 #' @title print.opuy
-#' @description Metodo print de de la funcion \code{\link{resumen_opuy}}
-#' @param x objeto de la clase \code{opuy} de la funcion \code{\link{resumen_opuy}}
-#' @param ... parametros adicionales
+#' @description Print method of \code{\link{resumen_opuy}} function
+#' @param x object of class \code{opuy} from \code{\link{resumen_opuy}} function
+#' @param ... additional arguments
 #' @rdname resumen_opuy
 #' @export
 
